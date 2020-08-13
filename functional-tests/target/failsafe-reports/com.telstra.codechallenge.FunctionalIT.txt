@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: com.telstra.codechallenge.FunctionalIT
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 1.288 s <<< FAILURE! - in com.telstra.codechallenge.FunctionalIT
+com.telstra.codechallenge.FunctionalIT.testMicroservice  Time elapsed: 0.294 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: microservice.feature:6 - evaluation of 'karate-config.js' failed: javascript function call failed: ReferenceError: "karate" is not defined
+
+com.telstra.codechallenge.FunctionalIT.testMicroservice  Time elapsed: 0.082 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: microservice.feature:13 - evaluation of 'karate-config.js' failed: javascript function call failed: ReferenceError: "karate" is not defined
+
+com.telstra.codechallenge.FunctionalIT.testQuotes  Time elapsed: 0.058 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: quotes.feature:6 - evaluation of 'karate-config.js' failed: javascript function call failed: ReferenceError: "karate" is not defined
+
+com.telstra.codechallenge.FunctionalIT.testQuotes  Time elapsed: 0.056 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: quotes.feature:24 - evaluation of 'karate-config.js' failed: javascript function call failed: ReferenceError: "karate" is not defined
+
+com.telstra.codechallenge.FunctionalIT.testHelloWorld  Time elapsed: 0.048 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: helloworld.feature:6 - evaluation of 'karate-config.js' failed: javascript function call failed: ReferenceError: "karate" is not defined
+

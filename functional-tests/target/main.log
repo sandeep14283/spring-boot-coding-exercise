@@ -1,0 +1,105 @@
+03:28:36.740 javascript function call failed: ReferenceError: "karate" is not defined
+03:28:36.741 failed function body: function() {
+  // See https://github.com/intuit/karate#karate-configjs for information on
+  // this file.
+  karate.configure("connectTimeout", 5000);
+  karate.configure("readTimeout", 5000);
+
+  var protocol = "http";
+  var host = "localhost";
+
+  var microservicePort = karate.properties["microservice.port"];
+  if (!microservicePort) {
+    microservicePort = "8080";
+  }
+
+  config = {};
+  config.microserviceUrl = protocol + "://" + host + ":" + microservicePort;
+  return config;
+}
+03:28:36.741 evaluation of 'karate-config.js' failed: javascript function call failed: ReferenceError: "karate" is not defined
+03:28:37.048 javascript function call failed: ReferenceError: "karate" is not defined
+03:28:37.048 failed function body: function() {
+  // See https://github.com/intuit/karate#karate-configjs for information on
+  // this file.
+  karate.configure("connectTimeout", 5000);
+  karate.configure("readTimeout", 5000);
+
+  var protocol = "http";
+  var host = "localhost";
+
+  var microservicePort = karate.properties["microservice.port"];
+  if (!microservicePort) {
+    microservicePort = "8080";
+  }
+
+  config = {};
+  config.microserviceUrl = protocol + "://" + host + ":" + microservicePort;
+  return config;
+}
+03:28:37.049 evaluation of 'karate-config.js' failed: javascript function call failed: ReferenceError: "karate" is not defined
+03:28:37.128 javascript function call failed: ReferenceError: "karate" is not defined
+03:28:37.128 failed function body: function() {
+  // See https://github.com/intuit/karate#karate-configjs for information on
+  // this file.
+  karate.configure("connectTimeout", 5000);
+  karate.configure("readTimeout", 5000);
+
+  var protocol = "http";
+  var host = "localhost";
+
+  var microservicePort = karate.properties["microservice.port"];
+  if (!microservicePort) {
+    microservicePort = "8080";
+  }
+
+  config = {};
+  config.microserviceUrl = protocol + "://" + host + ":" + microservicePort;
+  return config;
+}
+03:28:37.128 evaluation of 'karate-config.js' failed: javascript function call failed: ReferenceError: "karate" is not defined
+03:28:37.175 javascript function call failed: ReferenceError: "karate" is not defined
+03:28:37.175 failed function body: function() {
+  // See https://github.com/intuit/karate#karate-configjs for information on
+  // this file.
+  karate.configure("connectTimeout", 5000);
+  karate.configure("readTimeout", 5000);
+
+  var protocol = "http";
+  var host = "localhost";
+
+  var microservicePort = karate.properties["microservice.port"];
+  if (!microservicePort) {
+    microservicePort = "8080";
+  }
+
+  config = {};
+  config.microserviceUrl = protocol + "://" + host + ":" + microservicePort;
+  return config;
+}
+03:28:37.176 evaluation of 'karate-config.js' failed: javascript function call failed: ReferenceError: "karate" is not defined
+03:28:37.240 javascript function call failed: ReferenceError: "karate" is not defined
+03:28:37.241 failed function body: function() {
+  // See https://github.com/intuit/karate#karate-configjs for information on
+  // this file.
+  karate.configure("connectTimeout", 5000);
+  karate.configure("readTimeout", 5000);
+
+  var protocol = "http";
+  var host = "localhost";
+
+  var microservicePort = karate.properties["microservice.port"];
+  if (!microservicePort) {
+    microservicePort = "8080";
+  }
+
+  config = {};
+  config.microserviceUrl = protocol + "://" + host + ":" + microservicePort;
+  return config;
+}
+03:28:37.241 evaluation of 'karate-config.js' failed: javascript function call failed: ReferenceError: "karate" is not defined
+fig = {};
+  config.microserviceUrl = protocol + "://" + host + ":" + microservicePort;
+  return config;
+}
+03:17:35.713 evaluation of 'karate-config.js' failed: javascript function call failed: TypeError: Cannot read property "configure" from undefined
