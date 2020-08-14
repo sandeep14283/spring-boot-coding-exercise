@@ -171,30 +171,101 @@
 <span class="scenario-keyword">Scenario: [1:6]</span><span class="scenario-name">Is the health uri available and status=UP</span>
 </div>
 <div class="step-row">
-<div class="step-cell failed">* scenario init failed</div>
-<div class="time-cell failed">0</div>
-</div>
-<div class="preformatted">microservice.feature:6 - evaluation of 'karate-config.js' failed: javascript function call failed: ReferenceError: "karate" is not defined</div>
-</div>
-<div class="scenario">
-<div class="scenario-heading">
-<span class="scenario-keyword">Scenario: [1:6]</span><span class="scenario-name">Is the health uri available and status=UP</span>
+<div class="step-cell passed">Given url microserviceUrl</div>
+<div class="time-cell passed">0.000103</div>
 </div>
 <div class="step-row">
-<div class="step-cell failed">* scenario init failed</div>
-<div class="time-cell failed">0</div>
+<div class="step-cell passed">And path '/actuator/health'</div>
+<div class="time-cell passed">0.007404</div>
 </div>
-<div class="preformatted">microservice.feature:6 - evaluation of 'karate-config.js' failed: javascript function call failed: ReferenceError: "karate" is not defined</div>
+<div class="step-row">
+<div class="step-cell passed">When method GET</div>
+<div class="time-cell passed">2.912613</div>
+</div>
+<div class="preformatted">05:45:00.974 request:
+1 &gt; GET http://localhost:8080/actuator/health
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: localhost:8080
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
+
+05:45:01.167 response time in milliseconds: 185.69
+1 &lt; 200
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/vnd.spring-boot.actuator.v3+json
+1 &lt; Date: Fri, 14 Aug 2020 00:15:01 GMT
+1 &lt; Expires: 0
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Pragma: no-cache
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-XSS-Protection: 1; mode=block
+{"status":"UP"}</div>
+<div class="step-row">
+<div class="step-cell passed">Then status 200</div>
+<div class="time-cell passed">0.000045</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">And match response == { "status" : "UP" }</div>
+<div class="time-cell passed">0.007491</div>
+</div>
 </div>
 <div class="scenario">
 <div class="scenario-heading">
 <span class="scenario-keyword">Scenario: [2:13]</span><span class="scenario-name">Is the info uri available and returning data</span>
 </div>
 <div class="step-row">
-<div class="step-cell failed">* scenario init failed</div>
-<div class="time-cell failed">0</div>
+<div class="step-cell passed">Given url microserviceUrl</div>
+<div class="time-cell passed">0.000074</div>
 </div>
-<div class="preformatted">microservice.feature:13 - evaluation of 'karate-config.js' failed: javascript function call failed: ReferenceError: "karate" is not defined</div>
+<div class="step-row">
+<div class="step-cell passed">And path '/actuator/info'</div>
+<div class="time-cell passed">0.00802</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">When method GET</div>
+<div class="time-cell passed">0.034963</div>
+</div>
+<div class="preformatted">05:45:01.245 request:
+1 &gt; GET http://localhost:8080/actuator/info
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: localhost:8080
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
+
+05:45:01.275 response time in milliseconds: 26.92
+1 &lt; 200
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/vnd.spring-boot.actuator.v3+json
+1 &lt; Date: Fri, 14 Aug 2020 00:15:01 GMT
+1 &lt; Expires: 0
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Pragma: no-cache
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-XSS-Protection: 1; mode=block
+{"build":{"version":"1.0.0-SNAPSHOT","artifact":"microservice","name":"microservice","group":"com.telstra.code-challenge","time":"2020-08-13T23:52:20.025Z"}}</div>
+<div class="step-row">
+<div class="step-cell passed">Then status 200</div>
+<div class="time-cell passed">0.000033</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">And match response ==</div>
+<div class="time-cell passed">0.004279</div>
+</div>
+<div class="preformatted">{
+  build: {
+    version: '#string',
+    artifact: '#string',
+    name: '#string',
+    group: '#string',
+    time: '#string'
+  }
+}</div>
 </div>
 </div>
 </body>

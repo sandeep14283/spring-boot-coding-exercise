@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-failsafe-plugin/xsd/failsafe-test-report-3.0.xsd" version="3.0" name="com.telstra.codechallenge.FunctionalIT" time="1.288" tests="5" errors="0" skipped="0" failures="5">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-failsafe-plugin/xsd/failsafe-test-report-3.0.xsd" version="3.0" name="com.telstra.codechallenge.FunctionalIT" time="10.663" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -7,7 +7,7 @@
     <property name="java.specification.version" value="1.8"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="c:\spring-boot-coding-exercise\functional-tests\target\test-classes;c:\spring-boot-coding-exercise\functional-tests\target\functional-tests-1.0.0-SNAPSHOT.jar;C:\MAVEN_LIB\com\telstra\code-challenge\microservice\1.0.0-SNAPSHOT\microservice-1.0.0-SNAPSHOT.jar;C:\MAVEN_LIB\org\codehaus\jackson\jackson-mapper-asl\1.9.4\jackson-mapper-asl-1.9.4.jar;C:\MAVEN_LIB\org\codehaus\jackson\jackson-core-asl\1.9.4\jackson-core-asl-1.9.4.jar;C:\MAVEN_LIB\org\springframework\boot\spring-boot-devtools\2.2.6.RELEASE\spring-boot-devtools-2.2.6.RELEASE.jar;C:\MAVEN_LIB\org\springframework\boot\spring-boot\2.2.6.RELEASE\spring-boot-2.2.6.RELEASE.jar;C:\MAVEN_LIB\org\springframework\spring-core\5.2.5.RELEASE\spring-core-5.2.5.RELEASE.jar;C:\MAVEN_LIB\org\springframework\spring-jcl\5.2.5.RELEASE\spring-jcl-5.2.5.RELEASE.jar;C:\MAVEN_LIB\org\springframework\spring-context\5.2.5.RELEASE\spring-context-5.2.5.RELEASE.jar;C:\MAVEN_LIB\org\springframework\boot\spring-boot-starter-actuator\2.2.6.RELEASE\spring-boot-starter-actuator-2.2.6.RELEASE.jar;C:\MAVEN_LIB\org\springframework\boot\spring-boot-starter\2.2.6.RELEASE\spring-boot-starter-2.2.6.RELEASE.jar;C:\MAVEN_LIB\org\springframework\boot\spring-boot-starter-logging\2.2.6.RELEASE\spring-boot-starter-logging-2.2.6.RELEASE.jar;C:\MAVEN_LIB\org\apache\logging\log4j\log4j-to-slf4j\2.12.1\log4j-to-slf4j-2.12.1.jar;C:\MAVEN_LIB\org\apache\logging\log4j\log4j-api\2.12.1\log4j-api-2.12.1.jar;C:\MAVEN_LIB\org\slf4j\jul-to-slf4j\1.7.30\jul-to-slf4j-1.7.30.jar;C:\MAVEN_LIB\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\MAVEN_LIB\org\springframework\boot\spring-boot-actuator-autoconfigure\2.2.6.RELEASE\spring-boot-actuator-autoconfigure-2.2.6.RELEASE.jar;C:\MAVEN_LIB\org\springframework\boot\spring-boot-actuator\2.2.6.RELEASE\spring-boot-actuator-2.2.6.RELEASE.jar;C:\MAVEN_LIB\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\MAVEN_LIB\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\MAVEN_LIB\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\MAVEN_LIB\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.10.3\jackson-datatype-jsr310-2.10.3.jar;C:\MAVEN_LIB\io\micrometer\micrometer-core\1.3.6\micrometer-core-1.3.6.jar;C:\MAVEN_LIB\org\hdrhistogram\HdrHistogram\2.1.11\HdrHistogram-2.1.11.jar;C:\MAVEN_LIB\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\MAVEN_LIB\org\springframework\boot\spring-boot-starter-security\2.2.6.RELEASE\spring-boot-starter-security-2.2.6.RELEASE.jar;C:\MAVEN_LIB\org\springframework\spring-aop\5.2.5.RELEASE\spring-aop-5.2.5.RELEASE.jar;C:\MAVEN_LIB\org\springframework\spring-beans\5.2.5.RELEASE\spring-beans-5.2.5.RELEASE.jar;C:\MAVEN_LIB\org\springframework\security\spring-security-config\5.2.2.RELEASE\spring-security-config-5.2.2.RELEASE.jar;C:\MAVEN_LIB\org\springframework\security\spring-security-core\5.2.2.RELEASE\spring-security-core-5.2.2.RELEASE.jar;C:\MAVEN_LIB\org\springframework\security\spring-security-web\5.2.2.RELEASE\spring-security-web-5.2.2.RELEASE.jar;C:\MAVEN_LIB\org\springframework\spring-expression\5.2.3.RELEASE\spring-expression-5.2.3.RELEASE.jar;C:\MAVEN_LIB\org\springframework\boot\spring-boot-starter-web\2.2.6.RELEASE\spring-boot-starter-web-2.2.6.RELEASE.jar;C:\MAVEN_LIB\org\springframework\boot\spring-boot-starter-json\2.2.6.RELEASE\spring-boot-starter-json-2.2.6.RELEASE.jar;C:\MAVEN_LIB\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.10.3\jackson-datatype-jdk8-2.10.3.jar;C:\MAVEN_LIB\com\fasterxml\jackson\module\jackson-module-parameter-names\2.10.3\jackson-module-parameter-names-2.10.3.jar;C:\MAVEN_LIB\org\springframework\boot\spring-boot-starter-tomcat\2.2.6.RELEASE\spring-boot-starter-tomcat-2.2.6.RELEASE.jar;C:\MAVEN_LIB\org\apache\tomcat\embed\tomcat-embed-core\9.0.33\tomcat-embed-core-9.0.33.jar;C:\MAVEN_LIB\org\apache\tomcat\embed\tomcat-embed-el\9.0.33\tomcat-embed-el-9.0.33.jar;C:\MAVEN_LIB\org\apache\tomcat\embed\tomcat-embed-websocket\9.0.33\tomcat-embed-websocket-9.0.33.jar;C:\MAVEN_LIB\org\springframework\boot\spring-boot-starter-validation\2.2.6.RELEASE\spring-boot-starter-validation-2.2.6.RELEASE.jar;C:\MAVEN_LIB\jakarta\validation\jakarta.validation-api\2.0.2\jakarta.validation-api-2.0.2.jar;C:\MAVEN_LIB\org\hibernate\validator\hibernate-validator\6.0.18.Final\hibernate-validator-6.0.18.Final.jar;C:\MAVEN_LIB\org\jboss\logging\jboss-logging\3.3.2.Final\jboss-logging-3.3.2.Final.jar;C:\MAVEN_LIB\com\fasterxml\classmate\1.3.4\classmate-1.3.4.jar;C:\MAVEN_LIB\org\springframework\spring-web\5.2.5.RELEASE\spring-web-5.2.5.RELEASE.jar;C:\MAVEN_LIB\org\springframework\spring-webmvc\5.2.5.RELEASE\spring-webmvc-5.2.5.RELEASE.jar;C:\MAVEN_LIB\org\springframework\boot\spring-boot-autoconfigure\2.2.6.RELEASE\spring-boot-autoconfigure-2.2.6.RELEASE.jar;C:\MAVEN_LIB\org\projectlombok\lombok\1.18.12\lombok-1.18.12.jar;C:\MAVEN_LIB\com\intuit\karate\karate-apache\0.9.5\karate-apache-0.9.5.jar;C:\MAVEN_LIB\com\intuit\karate\karate-core\0.9.5\karate-core-0.9.5.jar;C:\MAVEN_LIB\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar;C:\MAVEN_LIB\net\minidev\json-smart\2.3\json-smart-2.3.jar;C:\MAVEN_LIB\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;C:\MAVEN_LIB\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\MAVEN_LIB\info\cukes\cucumber-java\1.2.5\cucumber-java-1.2.5.jar;C:\MAVEN_LIB\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;C:\MAVEN_LIB\org\yaml\snakeyaml\1.24\snakeyaml-1.24.jar;C:\MAVEN_LIB\de\siegmar\fastcsv\1.0.3\fastcsv-1.0.3.jar;C:\MAVEN_LIB\info\picocli\picocli\4.0.3\picocli-4.0.3.jar;C:\MAVEN_LIB\org\apache\httpcomponents\httpclient\4.5.11\httpclient-4.5.11.jar;C:\MAVEN_LIB\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\MAVEN_LIB\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\MAVEN_LIB\org\apache\httpcomponents\httpmime\4.5.11\httpmime-4.5.11.jar;C:\MAVEN_LIB\org\slf4j\jcl-over-slf4j\1.7.25\jcl-over-slf4j-1.7.25.jar;C:\MAVEN_LIB\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\MAVEN_LIB\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\MAVEN_LIB\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\MAVEN_LIB\com\intuit\karate\karate-junit5\0.9.5\karate-junit5-0.9.5.jar;C:\MAVEN_LIB\org\junit\jupiter\junit-jupiter-api\5.5.0\junit-jupiter-api-5.5.0.jar;C:\MAVEN_LIB\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\MAVEN_LIB\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\MAVEN_LIB\org\junit\platform\junit-platform-commons\1.5.0\junit-platform-commons-1.5.0.jar;C:\MAVEN_LIB\org\junit\jupiter\junit-jupiter-engine\5.5.0\junit-jupiter-engine-5.5.0.jar;C:\MAVEN_LIB\org\junit\platform\junit-platform-engine\1.5.0\junit-platform-engine-1.5.0.jar;"/>
+    <property name="java.class.path" value="E:\sandeep\spring-boot-coding-exercise\functional-tests\target\test-classes;E:\sandeep\spring-boot-coding-exercise\functional-tests\target\functional-tests-1.0.0-SNAPSHOT.jar;E:\sandeep\spring-boot-coding-exercise\microservice\target\microservice-1.0.0-SNAPSHOT.jar;D:\MAVEN_LIB\org\codehaus\jackson\jackson-mapper-asl\1.9.4\jackson-mapper-asl-1.9.4.jar;D:\MAVEN_LIB\org\codehaus\jackson\jackson-core-asl\1.9.4\jackson-core-asl-1.9.4.jar;D:\MAVEN_LIB\org\springframework\boot\spring-boot-devtools\2.2.6.RELEASE\spring-boot-devtools-2.2.6.RELEASE.jar;D:\MAVEN_LIB\org\springframework\boot\spring-boot\2.2.6.RELEASE\spring-boot-2.2.6.RELEASE.jar;D:\MAVEN_LIB\org\springframework\spring-core\5.2.5.RELEASE\spring-core-5.2.5.RELEASE.jar;D:\MAVEN_LIB\org\springframework\spring-jcl\5.2.5.RELEASE\spring-jcl-5.2.5.RELEASE.jar;D:\MAVEN_LIB\org\springframework\spring-context\5.2.5.RELEASE\spring-context-5.2.5.RELEASE.jar;D:\MAVEN_LIB\org\springframework\boot\spring-boot-starter-actuator\2.2.6.RELEASE\spring-boot-starter-actuator-2.2.6.RELEASE.jar;D:\MAVEN_LIB\org\springframework\boot\spring-boot-starter\2.2.6.RELEASE\spring-boot-starter-2.2.6.RELEASE.jar;D:\MAVEN_LIB\org\springframework\boot\spring-boot-starter-logging\2.2.6.RELEASE\spring-boot-starter-logging-2.2.6.RELEASE.jar;D:\MAVEN_LIB\org\apache\logging\log4j\log4j-to-slf4j\2.12.1\log4j-to-slf4j-2.12.1.jar;D:\MAVEN_LIB\org\apache\logging\log4j\log4j-api\2.12.1\log4j-api-2.12.1.jar;D:\MAVEN_LIB\org\slf4j\jul-to-slf4j\1.7.30\jul-to-slf4j-1.7.30.jar;D:\MAVEN_LIB\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;D:\MAVEN_LIB\org\springframework\boot\spring-boot-actuator-autoconfigure\2.2.6.RELEASE\spring-boot-actuator-autoconfigure-2.2.6.RELEASE.jar;D:\MAVEN_LIB\org\springframework\boot\spring-boot-actuator\2.2.6.RELEASE\spring-boot-actuator-2.2.6.RELEASE.jar;D:\MAVEN_LIB\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;D:\MAVEN_LIB\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;D:\MAVEN_LIB\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;D:\MAVEN_LIB\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.10.3\jackson-datatype-jsr310-2.10.3.jar;D:\MAVEN_LIB\io\micrometer\micrometer-core\1.3.6\micrometer-core-1.3.6.jar;D:\MAVEN_LIB\org\hdrhistogram\HdrHistogram\2.1.11\HdrHistogram-2.1.11.jar;D:\MAVEN_LIB\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;D:\MAVEN_LIB\org\springframework\boot\spring-boot-starter-security\2.2.6.RELEASE\spring-boot-starter-security-2.2.6.RELEASE.jar;D:\MAVEN_LIB\org\springframework\spring-aop\5.2.5.RELEASE\spring-aop-5.2.5.RELEASE.jar;D:\MAVEN_LIB\org\springframework\spring-beans\5.2.5.RELEASE\spring-beans-5.2.5.RELEASE.jar;D:\MAVEN_LIB\org\springframework\security\spring-security-config\5.2.2.RELEASE\spring-security-config-5.2.2.RELEASE.jar;D:\MAVEN_LIB\org\springframework\security\spring-security-core\5.2.2.RELEASE\spring-security-core-5.2.2.RELEASE.jar;D:\MAVEN_LIB\org\springframework\security\spring-security-web\5.2.2.RELEASE\spring-security-web-5.2.2.RELEASE.jar;D:\MAVEN_LIB\org\springframework\spring-expression\5.2.3.RELEASE\spring-expression-5.2.3.RELEASE.jar;D:\MAVEN_LIB\org\springframework\boot\spring-boot-starter-web\2.2.6.RELEASE\spring-boot-starter-web-2.2.6.RELEASE.jar;D:\MAVEN_LIB\org\springframework\boot\spring-boot-starter-json\2.2.6.RELEASE\spring-boot-starter-json-2.2.6.RELEASE.jar;D:\MAVEN_LIB\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.10.3\jackson-datatype-jdk8-2.10.3.jar;D:\MAVEN_LIB\com\fasterxml\jackson\module\jackson-module-parameter-names\2.10.3\jackson-module-parameter-names-2.10.3.jar;D:\MAVEN_LIB\org\springframework\boot\spring-boot-starter-tomcat\2.2.6.RELEASE\spring-boot-starter-tomcat-2.2.6.RELEASE.jar;D:\MAVEN_LIB\org\apache\tomcat\embed\tomcat-embed-core\9.0.33\tomcat-embed-core-9.0.33.jar;D:\MAVEN_LIB\org\apache\tomcat\embed\tomcat-embed-el\9.0.33\tomcat-embed-el-9.0.33.jar;D:\MAVEN_LIB\org\apache\tomcat\embed\tomcat-embed-websocket\9.0.33\tomcat-embed-websocket-9.0.33.jar;D:\MAVEN_LIB\org\springframework\boot\spring-boot-starter-validation\2.2.6.RELEASE\spring-boot-starter-validation-2.2.6.RELEASE.jar;D:\MAVEN_LIB\jakarta\validation\jakarta.validation-api\2.0.2\jakarta.validation-api-2.0.2.jar;D:\MAVEN_LIB\org\hibernate\validator\hibernate-validator\6.0.18.Final\hibernate-validator-6.0.18.Final.jar;D:\MAVEN_LIB\org\jboss\logging\jboss-logging\3.3.2.Final\jboss-logging-3.3.2.Final.jar;D:\MAVEN_LIB\com\fasterxml\classmate\1.3.4\classmate-1.3.4.jar;D:\MAVEN_LIB\org\springframework\spring-web\5.2.5.RELEASE\spring-web-5.2.5.RELEASE.jar;D:\MAVEN_LIB\org\springframework\spring-webmvc\5.2.5.RELEASE\spring-webmvc-5.2.5.RELEASE.jar;D:\MAVEN_LIB\org\springframework\boot\spring-boot-autoconfigure\2.2.6.RELEASE\spring-boot-autoconfigure-2.2.6.RELEASE.jar;D:\MAVEN_LIB\org\projectlombok\lombok\1.18.12\lombok-1.18.12.jar;D:\MAVEN_LIB\com\intuit\karate\karate-apache\0.9.5\karate-apache-0.9.5.jar;D:\MAVEN_LIB\com\intuit\karate\karate-core\0.9.5\karate-core-0.9.5.jar;D:\MAVEN_LIB\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar;D:\MAVEN_LIB\net\minidev\json-smart\2.3\json-smart-2.3.jar;D:\MAVEN_LIB\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;D:\MAVEN_LIB\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;D:\MAVEN_LIB\info\cukes\cucumber-java\1.2.5\cucumber-java-1.2.5.jar;D:\MAVEN_LIB\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;D:\MAVEN_LIB\org\yaml\snakeyaml\1.24\snakeyaml-1.24.jar;D:\MAVEN_LIB\de\siegmar\fastcsv\1.0.3\fastcsv-1.0.3.jar;D:\MAVEN_LIB\info\picocli\picocli\4.0.3\picocli-4.0.3.jar;D:\MAVEN_LIB\org\apache\httpcomponents\httpclient\4.5.11\httpclient-4.5.11.jar;D:\MAVEN_LIB\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;D:\MAVEN_LIB\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;D:\MAVEN_LIB\org\apache\httpcomponents\httpmime\4.5.11\httpmime-4.5.11.jar;D:\MAVEN_LIB\org\slf4j\jcl-over-slf4j\1.7.25\jcl-over-slf4j-1.7.25.jar;D:\MAVEN_LIB\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;D:\MAVEN_LIB\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;D:\MAVEN_LIB\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;D:\MAVEN_LIB\com\intuit\karate\karate-junit5\0.9.5\karate-junit5-0.9.5.jar;D:\MAVEN_LIB\org\junit\jupiter\junit-jupiter-api\5.5.0\junit-jupiter-api-5.5.0.jar;D:\MAVEN_LIB\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;D:\MAVEN_LIB\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;D:\MAVEN_LIB\org\junit\platform\junit-platform-commons\1.5.0\junit-platform-commons-1.5.0.jar;D:\MAVEN_LIB\org\junit\jupiter\junit-jupiter-engine\5.5.0\junit-jupiter-engine-5.5.0.jar;D:\MAVEN_LIB\org\junit\platform\junit-platform-engine\1.5.0\junit-platform-engine-1.5.0.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,222 +15,673 @@
     <property name="user.timezone" value="Asia/Calcutta"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="os.name" value="Windows 10"/>
-    <property name="user.country" value="US"/>
+    <property name="user.country" value="IN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_92\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\848216\AppData\Local\Temp\surefire8890735930886316296\surefirebooter5480869487009797580.jar C:\Users\848216\AppData\Local\Temp\surefire8890735930886316296 2020-08-14T01-28-37_521-jvmRun1 surefire4497574951191730968tmp surefire_04373367650853913575tmp"/>
-    <property name="surefire.test.class.path" value="c:\spring-boot-coding-exercise\functional-tests\target\test-classes;c:\spring-boot-coding-exercise\functional-tests\target\functional-tests-1.0.0-SNAPSHOT.jar;C:\MAVEN_LIB\com\telstra\code-challenge\microservice\1.0.0-SNAPSHOT\microservice-1.0.0-SNAPSHOT.jar;C:\MAVEN_LIB\org\codehaus\jackson\jackson-mapper-asl\1.9.4\jackson-mapper-asl-1.9.4.jar;C:\MAVEN_LIB\org\codehaus\jackson\jackson-core-asl\1.9.4\jackson-core-asl-1.9.4.jar;C:\MAVEN_LIB\org\springframework\boot\spring-boot-devtools\2.2.6.RELEASE\spring-boot-devtools-2.2.6.RELEASE.jar;C:\MAVEN_LIB\org\springframework\boot\spring-boot\2.2.6.RELEASE\spring-boot-2.2.6.RELEASE.jar;C:\MAVEN_LIB\org\springframework\spring-core\5.2.5.RELEASE\spring-core-5.2.5.RELEASE.jar;C:\MAVEN_LIB\org\springframework\spring-jcl\5.2.5.RELEASE\spring-jcl-5.2.5.RELEASE.jar;C:\MAVEN_LIB\org\springframework\spring-context\5.2.5.RELEASE\spring-context-5.2.5.RELEASE.jar;C:\MAVEN_LIB\org\springframework\boot\spring-boot-starter-actuator\2.2.6.RELEASE\spring-boot-starter-actuator-2.2.6.RELEASE.jar;C:\MAVEN_LIB\org\springframework\boot\spring-boot-starter\2.2.6.RELEASE\spring-boot-starter-2.2.6.RELEASE.jar;C:\MAVEN_LIB\org\springframework\boot\spring-boot-starter-logging\2.2.6.RELEASE\spring-boot-starter-logging-2.2.6.RELEASE.jar;C:\MAVEN_LIB\org\apache\logging\log4j\log4j-to-slf4j\2.12.1\log4j-to-slf4j-2.12.1.jar;C:\MAVEN_LIB\org\apache\logging\log4j\log4j-api\2.12.1\log4j-api-2.12.1.jar;C:\MAVEN_LIB\org\slf4j\jul-to-slf4j\1.7.30\jul-to-slf4j-1.7.30.jar;C:\MAVEN_LIB\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\MAVEN_LIB\org\springframework\boot\spring-boot-actuator-autoconfigure\2.2.6.RELEASE\spring-boot-actuator-autoconfigure-2.2.6.RELEASE.jar;C:\MAVEN_LIB\org\springframework\boot\spring-boot-actuator\2.2.6.RELEASE\spring-boot-actuator-2.2.6.RELEASE.jar;C:\MAVEN_LIB\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\MAVEN_LIB\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\MAVEN_LIB\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\MAVEN_LIB\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.10.3\jackson-datatype-jsr310-2.10.3.jar;C:\MAVEN_LIB\io\micrometer\micrometer-core\1.3.6\micrometer-core-1.3.6.jar;C:\MAVEN_LIB\org\hdrhistogram\HdrHistogram\2.1.11\HdrHistogram-2.1.11.jar;C:\MAVEN_LIB\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\MAVEN_LIB\org\springframework\boot\spring-boot-starter-security\2.2.6.RELEASE\spring-boot-starter-security-2.2.6.RELEASE.jar;C:\MAVEN_LIB\org\springframework\spring-aop\5.2.5.RELEASE\spring-aop-5.2.5.RELEASE.jar;C:\MAVEN_LIB\org\springframework\spring-beans\5.2.5.RELEASE\spring-beans-5.2.5.RELEASE.jar;C:\MAVEN_LIB\org\springframework\security\spring-security-config\5.2.2.RELEASE\spring-security-config-5.2.2.RELEASE.jar;C:\MAVEN_LIB\org\springframework\security\spring-security-core\5.2.2.RELEASE\spring-security-core-5.2.2.RELEASE.jar;C:\MAVEN_LIB\org\springframework\security\spring-security-web\5.2.2.RELEASE\spring-security-web-5.2.2.RELEASE.jar;C:\MAVEN_LIB\org\springframework\spring-expression\5.2.3.RELEASE\spring-expression-5.2.3.RELEASE.jar;C:\MAVEN_LIB\org\springframework\boot\spring-boot-starter-web\2.2.6.RELEASE\spring-boot-starter-web-2.2.6.RELEASE.jar;C:\MAVEN_LIB\org\springframework\boot\spring-boot-starter-json\2.2.6.RELEASE\spring-boot-starter-json-2.2.6.RELEASE.jar;C:\MAVEN_LIB\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.10.3\jackson-datatype-jdk8-2.10.3.jar;C:\MAVEN_LIB\com\fasterxml\jackson\module\jackson-module-parameter-names\2.10.3\jackson-module-parameter-names-2.10.3.jar;C:\MAVEN_LIB\org\springframework\boot\spring-boot-starter-tomcat\2.2.6.RELEASE\spring-boot-starter-tomcat-2.2.6.RELEASE.jar;C:\MAVEN_LIB\org\apache\tomcat\embed\tomcat-embed-core\9.0.33\tomcat-embed-core-9.0.33.jar;C:\MAVEN_LIB\org\apache\tomcat\embed\tomcat-embed-el\9.0.33\tomcat-embed-el-9.0.33.jar;C:\MAVEN_LIB\org\apache\tomcat\embed\tomcat-embed-websocket\9.0.33\tomcat-embed-websocket-9.0.33.jar;C:\MAVEN_LIB\org\springframework\boot\spring-boot-starter-validation\2.2.6.RELEASE\spring-boot-starter-validation-2.2.6.RELEASE.jar;C:\MAVEN_LIB\jakarta\validation\jakarta.validation-api\2.0.2\jakarta.validation-api-2.0.2.jar;C:\MAVEN_LIB\org\hibernate\validator\hibernate-validator\6.0.18.Final\hibernate-validator-6.0.18.Final.jar;C:\MAVEN_LIB\org\jboss\logging\jboss-logging\3.3.2.Final\jboss-logging-3.3.2.Final.jar;C:\MAVEN_LIB\com\fasterxml\classmate\1.3.4\classmate-1.3.4.jar;C:\MAVEN_LIB\org\springframework\spring-web\5.2.5.RELEASE\spring-web-5.2.5.RELEASE.jar;C:\MAVEN_LIB\org\springframework\spring-webmvc\5.2.5.RELEASE\spring-webmvc-5.2.5.RELEASE.jar;C:\MAVEN_LIB\org\springframework\boot\spring-boot-autoconfigure\2.2.6.RELEASE\spring-boot-autoconfigure-2.2.6.RELEASE.jar;C:\MAVEN_LIB\org\projectlombok\lombok\1.18.12\lombok-1.18.12.jar;C:\MAVEN_LIB\com\intuit\karate\karate-apache\0.9.5\karate-apache-0.9.5.jar;C:\MAVEN_LIB\com\intuit\karate\karate-core\0.9.5\karate-core-0.9.5.jar;C:\MAVEN_LIB\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar;C:\MAVEN_LIB\net\minidev\json-smart\2.3\json-smart-2.3.jar;C:\MAVEN_LIB\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;C:\MAVEN_LIB\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\MAVEN_LIB\info\cukes\cucumber-java\1.2.5\cucumber-java-1.2.5.jar;C:\MAVEN_LIB\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;C:\MAVEN_LIB\org\yaml\snakeyaml\1.24\snakeyaml-1.24.jar;C:\MAVEN_LIB\de\siegmar\fastcsv\1.0.3\fastcsv-1.0.3.jar;C:\MAVEN_LIB\info\picocli\picocli\4.0.3\picocli-4.0.3.jar;C:\MAVEN_LIB\org\apache\httpcomponents\httpclient\4.5.11\httpclient-4.5.11.jar;C:\MAVEN_LIB\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\MAVEN_LIB\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\MAVEN_LIB\org\apache\httpcomponents\httpmime\4.5.11\httpmime-4.5.11.jar;C:\MAVEN_LIB\org\slf4j\jcl-over-slf4j\1.7.25\jcl-over-slf4j-1.7.25.jar;C:\MAVEN_LIB\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\MAVEN_LIB\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\MAVEN_LIB\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\MAVEN_LIB\com\intuit\karate\karate-junit5\0.9.5\karate-junit5-0.9.5.jar;C:\MAVEN_LIB\org\junit\jupiter\junit-jupiter-api\5.5.0\junit-jupiter-api-5.5.0.jar;C:\MAVEN_LIB\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\MAVEN_LIB\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\MAVEN_LIB\org\junit\platform\junit-platform-commons\1.5.0\junit-platform-commons-1.5.0.jar;C:\MAVEN_LIB\org\junit\jupiter\junit-jupiter-engine\5.5.0\junit-jupiter-engine-5.5.0.jar;C:\MAVEN_LIB\org\junit\platform\junit-platform-engine\1.5.0\junit-platform-engine-1.5.0.jar;"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_261\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\SANDEEP\AppData\Local\Temp\surefire6643683416987049526\surefirebooter5596686335892181228.jar C:\Users\SANDEEP\AppData\Local\Temp\surefire6643683416987049526 2020-08-14T05-23-21_532-jvmRun1 surefire8967887877094294310tmp surefire_01899515424922174494tmp"/>
+    <property name="surefire.test.class.path" value="E:\sandeep\spring-boot-coding-exercise\functional-tests\target\test-classes;E:\sandeep\spring-boot-coding-exercise\functional-tests\target\functional-tests-1.0.0-SNAPSHOT.jar;E:\sandeep\spring-boot-coding-exercise\microservice\target\microservice-1.0.0-SNAPSHOT.jar;D:\MAVEN_LIB\org\codehaus\jackson\jackson-mapper-asl\1.9.4\jackson-mapper-asl-1.9.4.jar;D:\MAVEN_LIB\org\codehaus\jackson\jackson-core-asl\1.9.4\jackson-core-asl-1.9.4.jar;D:\MAVEN_LIB\org\springframework\boot\spring-boot-devtools\2.2.6.RELEASE\spring-boot-devtools-2.2.6.RELEASE.jar;D:\MAVEN_LIB\org\springframework\boot\spring-boot\2.2.6.RELEASE\spring-boot-2.2.6.RELEASE.jar;D:\MAVEN_LIB\org\springframework\spring-core\5.2.5.RELEASE\spring-core-5.2.5.RELEASE.jar;D:\MAVEN_LIB\org\springframework\spring-jcl\5.2.5.RELEASE\spring-jcl-5.2.5.RELEASE.jar;D:\MAVEN_LIB\org\springframework\spring-context\5.2.5.RELEASE\spring-context-5.2.5.RELEASE.jar;D:\MAVEN_LIB\org\springframework\boot\spring-boot-starter-actuator\2.2.6.RELEASE\spring-boot-starter-actuator-2.2.6.RELEASE.jar;D:\MAVEN_LIB\org\springframework\boot\spring-boot-starter\2.2.6.RELEASE\spring-boot-starter-2.2.6.RELEASE.jar;D:\MAVEN_LIB\org\springframework\boot\spring-boot-starter-logging\2.2.6.RELEASE\spring-boot-starter-logging-2.2.6.RELEASE.jar;D:\MAVEN_LIB\org\apache\logging\log4j\log4j-to-slf4j\2.12.1\log4j-to-slf4j-2.12.1.jar;D:\MAVEN_LIB\org\apache\logging\log4j\log4j-api\2.12.1\log4j-api-2.12.1.jar;D:\MAVEN_LIB\org\slf4j\jul-to-slf4j\1.7.30\jul-to-slf4j-1.7.30.jar;D:\MAVEN_LIB\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;D:\MAVEN_LIB\org\springframework\boot\spring-boot-actuator-autoconfigure\2.2.6.RELEASE\spring-boot-actuator-autoconfigure-2.2.6.RELEASE.jar;D:\MAVEN_LIB\org\springframework\boot\spring-boot-actuator\2.2.6.RELEASE\spring-boot-actuator-2.2.6.RELEASE.jar;D:\MAVEN_LIB\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;D:\MAVEN_LIB\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;D:\MAVEN_LIB\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;D:\MAVEN_LIB\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.10.3\jackson-datatype-jsr310-2.10.3.jar;D:\MAVEN_LIB\io\micrometer\micrometer-core\1.3.6\micrometer-core-1.3.6.jar;D:\MAVEN_LIB\org\hdrhistogram\HdrHistogram\2.1.11\HdrHistogram-2.1.11.jar;D:\MAVEN_LIB\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;D:\MAVEN_LIB\org\springframework\boot\spring-boot-starter-security\2.2.6.RELEASE\spring-boot-starter-security-2.2.6.RELEASE.jar;D:\MAVEN_LIB\org\springframework\spring-aop\5.2.5.RELEASE\spring-aop-5.2.5.RELEASE.jar;D:\MAVEN_LIB\org\springframework\spring-beans\5.2.5.RELEASE\spring-beans-5.2.5.RELEASE.jar;D:\MAVEN_LIB\org\springframework\security\spring-security-config\5.2.2.RELEASE\spring-security-config-5.2.2.RELEASE.jar;D:\MAVEN_LIB\org\springframework\security\spring-security-core\5.2.2.RELEASE\spring-security-core-5.2.2.RELEASE.jar;D:\MAVEN_LIB\org\springframework\security\spring-security-web\5.2.2.RELEASE\spring-security-web-5.2.2.RELEASE.jar;D:\MAVEN_LIB\org\springframework\spring-expression\5.2.3.RELEASE\spring-expression-5.2.3.RELEASE.jar;D:\MAVEN_LIB\org\springframework\boot\spring-boot-starter-web\2.2.6.RELEASE\spring-boot-starter-web-2.2.6.RELEASE.jar;D:\MAVEN_LIB\org\springframework\boot\spring-boot-starter-json\2.2.6.RELEASE\spring-boot-starter-json-2.2.6.RELEASE.jar;D:\MAVEN_LIB\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.10.3\jackson-datatype-jdk8-2.10.3.jar;D:\MAVEN_LIB\com\fasterxml\jackson\module\jackson-module-parameter-names\2.10.3\jackson-module-parameter-names-2.10.3.jar;D:\MAVEN_LIB\org\springframework\boot\spring-boot-starter-tomcat\2.2.6.RELEASE\spring-boot-starter-tomcat-2.2.6.RELEASE.jar;D:\MAVEN_LIB\org\apache\tomcat\embed\tomcat-embed-core\9.0.33\tomcat-embed-core-9.0.33.jar;D:\MAVEN_LIB\org\apache\tomcat\embed\tomcat-embed-el\9.0.33\tomcat-embed-el-9.0.33.jar;D:\MAVEN_LIB\org\apache\tomcat\embed\tomcat-embed-websocket\9.0.33\tomcat-embed-websocket-9.0.33.jar;D:\MAVEN_LIB\org\springframework\boot\spring-boot-starter-validation\2.2.6.RELEASE\spring-boot-starter-validation-2.2.6.RELEASE.jar;D:\MAVEN_LIB\jakarta\validation\jakarta.validation-api\2.0.2\jakarta.validation-api-2.0.2.jar;D:\MAVEN_LIB\org\hibernate\validator\hibernate-validator\6.0.18.Final\hibernate-validator-6.0.18.Final.jar;D:\MAVEN_LIB\org\jboss\logging\jboss-logging\3.3.2.Final\jboss-logging-3.3.2.Final.jar;D:\MAVEN_LIB\com\fasterxml\classmate\1.3.4\classmate-1.3.4.jar;D:\MAVEN_LIB\org\springframework\spring-web\5.2.5.RELEASE\spring-web-5.2.5.RELEASE.jar;D:\MAVEN_LIB\org\springframework\spring-webmvc\5.2.5.RELEASE\spring-webmvc-5.2.5.RELEASE.jar;D:\MAVEN_LIB\org\springframework\boot\spring-boot-autoconfigure\2.2.6.RELEASE\spring-boot-autoconfigure-2.2.6.RELEASE.jar;D:\MAVEN_LIB\org\projectlombok\lombok\1.18.12\lombok-1.18.12.jar;D:\MAVEN_LIB\com\intuit\karate\karate-apache\0.9.5\karate-apache-0.9.5.jar;D:\MAVEN_LIB\com\intuit\karate\karate-core\0.9.5\karate-core-0.9.5.jar;D:\MAVEN_LIB\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar;D:\MAVEN_LIB\net\minidev\json-smart\2.3\json-smart-2.3.jar;D:\MAVEN_LIB\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;D:\MAVEN_LIB\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;D:\MAVEN_LIB\info\cukes\cucumber-java\1.2.5\cucumber-java-1.2.5.jar;D:\MAVEN_LIB\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;D:\MAVEN_LIB\org\yaml\snakeyaml\1.24\snakeyaml-1.24.jar;D:\MAVEN_LIB\de\siegmar\fastcsv\1.0.3\fastcsv-1.0.3.jar;D:\MAVEN_LIB\info\picocli\picocli\4.0.3\picocli-4.0.3.jar;D:\MAVEN_LIB\org\apache\httpcomponents\httpclient\4.5.11\httpclient-4.5.11.jar;D:\MAVEN_LIB\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;D:\MAVEN_LIB\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;D:\MAVEN_LIB\org\apache\httpcomponents\httpmime\4.5.11\httpmime-4.5.11.jar;D:\MAVEN_LIB\org\slf4j\jcl-over-slf4j\1.7.25\jcl-over-slf4j-1.7.25.jar;D:\MAVEN_LIB\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;D:\MAVEN_LIB\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;D:\MAVEN_LIB\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;D:\MAVEN_LIB\com\intuit\karate\karate-junit5\0.9.5\karate-junit5-0.9.5.jar;D:\MAVEN_LIB\org\junit\jupiter\junit-jupiter-api\5.5.0\junit-jupiter-api-5.5.0.jar;D:\MAVEN_LIB\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;D:\MAVEN_LIB\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;D:\MAVEN_LIB\org\junit\platform\junit-platform-commons\1.5.0\junit-platform-commons-1.5.0.jar;D:\MAVEN_LIB\org\junit\jupiter\junit-jupiter-engine\5.5.0\junit-jupiter-engine-5.5.0.jar;D:\MAVEN_LIB\org\junit\platform\junit-platform-engine\1.5.0\junit-platform-engine-1.5.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="C:\Users\848216"/>
+    <property name="user.home" value="C:\Users\SANDEEP"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_92\jre"/>
-    <property name="basedir" value="c:\spring-boot-coding-exercise\functional-tests"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_261\jre"/>
+    <property name="basedir" value="E:\sandeep\spring-boot-coding-exercise\functional-tests"/>
     <property name="file.separator" value="\"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\848216\AppData\Local\Temp\surefire8890735930886316296\surefirebooter5480869487009797580.jar"/>
-    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_92\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_92\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_92\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_92\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_92\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_92\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_92\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_92\jre\classes"/>
+    <property name="surefire.real.class.path" value="C:\Users\SANDEEP\AppData\Local\Temp\surefire6643683416987049526\surefirebooter5596686335892181228.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_261\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_261\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="java.runtime.version" value="1.8.0_92-b14"/>
-    <property name="user.name" value="848216"/>
+    <property name="java.runtime.version" value="1.8.0_261-b12"/>
+    <property name="user.name" value="SANDEEP"/>
     <property name="path.separator" value=";"/>
     <property name="os.version" value="10.0"/>
-    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_92\jre\lib\endorsed"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_261\jre\lib\endorsed"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="file.encoding" value="Cp1252"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="localRepository" value="C:\MAVEN_LIB"/>
+    <property name="localRepository" value="D:\MAVEN_LIB"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
-    <property name="java.io.tmpdir" value="C:\Users\848216\AppData\Local\Temp\"/>
-    <property name="java.version" value="1.8.0_92"/>
-    <property name="user.dir" value="c:\spring-boot-coding-exercise\functional-tests"/>
+    <property name="java.io.tmpdir" value="C:\Users\SANDEEP\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_261"/>
+    <property name="user.dir" value="E:\sandeep\spring-boot-coding-exercise\functional-tests"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_92\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Webex\Webex\Applications;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_92\bin;C:\apache-maven-3.5.4\bin;C:\Program Files\nodejs\;C:\Program Files\Git\bin;C:\Users\848216\AppData\Local\Microsoft\WindowsApps;C:\Users\848216\AppData\Roaming\npm;C:\Users\848216\AppData\Local\Programs\Microsoft VS Code\bin;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_261\jre\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\SlickEdit Pro 23.0.2\win\;E:\app\SANDEEP\virtual\product\12.2.0\dbhome_1\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_261\bin;D:\apache-maven-3.5.4\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\bin;D:\gradle-5.5.1\bin;D:\liquibase-3.7.0-bin;C:\Program Files\PostgreSQL\10\bin;C:\Program Files\PostgreSQL\10\lib;E:\apache-zookeeper-3.5.5-bin\bin;D:\kafka_2.12-2.2.0\bin;C:\Program Files\Amazon\AWSCLIV2DevPreview\;C:\Program Files\PuTTY\;C:\Program Files\nodejs\;C:\Users\SANDEEP\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\SANDEEP\AppData\Local\Programs\Python\Python38\;C:\Users\SANDEEP\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\DataGrip 2019.2\bin;C:\Users\SANDEEP\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\SANDEEP\AppData\Local\GitHubDesktop\bin;C:\Users\SANDEEP\AppData\Roaming\npm;."/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="java.vm.version" value="25.92-b14"/>
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_92\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="java.vm.version" value="25.261-b12"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext;C:\windows\Sun\Java\lib\ext"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="testMicroservice" classname="com.telstra.codechallenge.FunctionalIT" time="0.294">
-    <failure type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: microservice.feature:6 - evaluation of 'karate-config.js' failed: javascript function call failed: ReferenceError: "karate" is not defined
-]]></failure>
-    <system-out><![CDATA[01:28:46.562 [main] ERROR com.intuit.karate - javascript function call failed: ReferenceError: "karate" is not defined
-01:28:46.567 [main] ERROR com.intuit.karate - failed function body: function() {
-  // See https://github.com/intuit/karate#karate-configjs for information on
-  // this file.
+  <testcase name="testMicroservice" classname="com.telstra.codechallenge.FunctionalIT" time="2.228">
+    <system-out><![CDATA[05:23:26.680 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+05:23:28.279 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: karate
+05:23:28.294 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+05:23:28.295 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/actuator/health
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
 
-  karate.configure("connectTimeout", 5000);
-  karate.configure("readTimeout", 5000);
+05:23:28.299 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://localhost:8080][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+05:23:28.326 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}->http://localhost:8080][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+05:23:28.329 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}->http://localhost:8080
+05:23:28.341 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to localhost/127.0.0.1:8080
+05:23:28.354 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 127.0.0.1:58377<->127.0.0.1:8080
+05:23:28.354 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 5000
+05:23:28.355 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request GET /actuator/health HTTP/1.1
+05:23:28.355 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+05:23:28.356 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+05:23:28.359 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> GET /actuator/health HTTP/1.1
+05:23:28.359 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: localhost:8080
+05:23:28.359 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+05:23:28.360 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
+05:23:28.360 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+05:23:28.360 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "GET /actuator/health HTTP/1.1[\r][\n]"
+05:23:28.360 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: localhost:8080[\r][\n]"
+05:23:28.360 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+05:23:28.360 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)[\r][\n]"
+05:23:28.361 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+05:23:28.361 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+05:23:28.370 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 [\r][\n]"
+05:23:28.370 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+05:23:28.370 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-XSS-Protection: 1; mode=block[\r][\n]"
+05:23:28.371 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+05:23:28.371 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Pragma: no-cache[\r][\n]"
+05:23:28.371 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Expires: 0[\r][\n]"
+05:23:28.371 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Frame-Options: DENY[\r][\n]"
+05:23:28.371 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Type: application/vnd.spring-boot.actuator.v3+json[\r][\n]"
+05:23:28.371 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+05:23:28.371 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Thu, 13 Aug 2020 23:53:28 GMT[\r][\n]"
+05:23:28.372 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Keep-Alive: timeout=60[\r][\n]"
+05:23:28.372 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+05:23:28.372 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+05:23:28.372 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "f[\r][\n]"
+05:23:28.372 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "{"status":"UP"}[\r][\n]"
+05:23:28.376 [main] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 
+05:23:28.376 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-Content-Type-Options: nosniff
+05:23:28.377 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-XSS-Protection: 1; mode=block
+05:23:28.377 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+05:23:28.377 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Pragma: no-cache
+05:23:28.377 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Expires: 0
+05:23:28.377 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-Frame-Options: DENY
+05:23:28.377 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Type: application/vnd.spring-boot.actuator.v3+json
+05:23:28.377 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Transfer-Encoding: chunked
+05:23:28.377 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Thu, 13 Aug 2020 23:53:28 GMT
+05:23:28.377 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Keep-Alive: timeout=60
+05:23:28.378 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Connection: keep-alive
+05:23:28.387 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive for 60000 MILLISECONDS
+05:23:28.394 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "0[\r][\n]"
+05:23:28.394 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+05:23:28.395 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {}->http://localhost:8080] can be kept alive for 60.0 seconds
+05:23:28.395 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 0
+05:23:28.395 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}->http://localhost:8080][total available: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+05:23:28.395 [main] DEBUG com.intuit.karate - response time in milliseconds: 95.00
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/vnd.spring-boot.actuator.v3+json
+1 < Date: Thu, 13 Aug 2020 23:53:28 GMT
+1 < Expires: 0
+1 < Keep-Alive: timeout=60
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"status":"UP"}
 
-  var protocol = "http";
-  var host = "localhost";
+05:23:28.400 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+05:23:28.400 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+05:23:28.401 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+]]></system-out>
+  </testcase>
+  <testcase name="testMicroservice" classname="com.telstra.codechallenge.FunctionalIT" time="0.398">
+    <system-out><![CDATA[05:23:28.436 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+05:23:28.446 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: karate
+05:23:28.449 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+05:23:28.449 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/actuator/info
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
 
-  var microservicePort = karate.properties["microservice.port"];
-  if (!microservicePort) {
-    microservicePort = "8080";
-  }
+05:23:28.453 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://localhost:8080][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+05:23:28.454 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 1][route: {}->http://localhost:8080][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+05:23:28.454 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}->http://localhost:8080
+05:23:28.454 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to localhost/127.0.0.1:8080
+05:23:28.455 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 127.0.0.1:58378<->127.0.0.1:8080
+05:23:28.456 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-1: set socket timeout to 5000
+05:23:28.456 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request GET /actuator/info HTTP/1.1
+05:23:28.457 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+05:23:28.458 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+05:23:28.460 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> GET /actuator/info HTTP/1.1
+05:23:28.460 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> Host: localhost:8080
+05:23:28.460 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> Connection: Keep-Alive
+05:23:28.461 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
+05:23:28.461 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> Accept-Encoding: gzip,deflate
+05:23:28.462 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "GET /actuator/info HTTP/1.1[\r][\n]"
+05:23:28.463 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "Host: localhost:8080[\r][\n]"
+05:23:28.463 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+05:23:28.463 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)[\r][\n]"
+05:23:28.463 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+05:23:28.463 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "[\r][\n]"
+05:23:28.499 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "HTTP/1.1 200 [\r][\n]"
+05:23:28.499 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "X-Content-Type-Options: nosniff[\r][\n]"
+05:23:28.499 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "X-XSS-Protection: 1; mode=block[\r][\n]"
+05:23:28.499 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+05:23:28.499 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Pragma: no-cache[\r][\n]"
+05:23:28.499 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Expires: 0[\r][\n]"
+05:23:28.499 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "X-Frame-Options: DENY[\r][\n]"
+05:23:28.499 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Content-Type: application/vnd.spring-boot.actuator.v3+json[\r][\n]"
+05:23:28.500 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Transfer-Encoding: chunked[\r][\n]"
+05:23:28.500 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Date: Thu, 13 Aug 2020 23:53:28 GMT[\r][\n]"
+05:23:28.500 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Keep-Alive: timeout=60[\r][\n]"
+05:23:28.500 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Connection: keep-alive[\r][\n]"
+05:23:28.500 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "[\r][\n]"
+05:23:28.500 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "9d[\r][\n]"
+05:23:28.500 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "{"build":{"version":"1.0.0-SNAPSHOT","artifact":"microservice","name":"microservice","group":"com.telstra.code-challenge","time":"2020-08-13T23:52:20.025Z"}}[\r][\n]"
+05:23:28.500 [main] DEBUG org.apache.http.headers - http-outgoing-1 << HTTP/1.1 200 
+05:23:28.501 [main] DEBUG org.apache.http.headers - http-outgoing-1 << X-Content-Type-Options: nosniff
+05:23:28.501 [main] DEBUG org.apache.http.headers - http-outgoing-1 << X-XSS-Protection: 1; mode=block
+05:23:28.501 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+05:23:28.501 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Pragma: no-cache
+05:23:28.501 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Expires: 0
+05:23:28.501 [main] DEBUG org.apache.http.headers - http-outgoing-1 << X-Frame-Options: DENY
+05:23:28.501 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Content-Type: application/vnd.spring-boot.actuator.v3+json
+05:23:28.501 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Transfer-Encoding: chunked
+05:23:28.501 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Date: Thu, 13 Aug 2020 23:53:28 GMT
+05:23:28.501 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Keep-Alive: timeout=60
+05:23:28.501 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Connection: keep-alive
+05:23:28.502 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive for 60000 MILLISECONDS
+05:23:28.502 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "0[\r][\n]"
+05:23:28.502 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "[\r][\n]"
+05:23:28.503 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 1][route: {}->http://localhost:8080] can be kept alive for 60.0 seconds
+05:23:28.503 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-1: set socket timeout to 0
+05:23:28.503 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 1][route: {}->http://localhost:8080][total available: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+05:23:28.503 [main] DEBUG com.intuit.karate - response time in milliseconds: 48.67
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/vnd.spring-boot.actuator.v3+json
+1 < Date: Thu, 13 Aug 2020 23:53:28 GMT
+1 < Expires: 0
+1 < Keep-Alive: timeout=60
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"build":{"version":"1.0.0-SNAPSHOT","artifact":"microservice","name":"microservice","group":"com.telstra.code-challenge","time":"2020-08-13T23:52:20.025Z"}}
 
-  config = {};
-  config.microserviceUrl = protocol + "://" + host + ":" + microservicePort;
-  return config;
-}
-01:28:46.567 [main] ERROR com.intuit.karate - evaluation of 'karate-config.js' failed: javascript function call failed: ReferenceError: "karate" is not defined
+05:23:28.504 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+05:23:28.505 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+05:23:28.505 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
 ---------------------------------------------------------
 feature: classpath:com/telstra/codechallenge/microservice.feature
-scenarios:  1 | passed:  0 | failed:  1 | time: 0.0000
+scenarios:  2 | passed:  2 | failed:  0 | time: 1.7589
 ---------------------------------------------------------
+05:23:28.758 [Finalizer] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager is shutting down
+05:23:28.760 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-1: Close connection
+05:23:28.761 [Finalizer] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager shut down
 
 HTML report: (paste into browser to view) | Karate version: 0.9.5
-file:/c:/spring-boot-coding-exercise/functional-tests/target/surefire-reports/com.telstra.codechallenge.microservice.html
+file:/E:/sandeep/spring-boot-coding-exercise/functional-tests/target/surefire-reports/com.telstra.codechallenge.microservice.html
 ---------------------------------------------------------
 
 ]]></system-out>
   </testcase>
-  <testcase name="testMicroservice" classname="com.telstra.codechallenge.FunctionalIT" time="0.082">
-    <failure type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: microservice.feature:13 - evaluation of 'karate-config.js' failed: javascript function call failed: ReferenceError: "karate" is not defined
-]]></failure>
-    <system-out><![CDATA[01:28:46.745 [main] ERROR com.intuit.karate - javascript function call failed: ReferenceError: "karate" is not defined
-01:28:46.745 [main] ERROR com.intuit.karate - failed function body: function() {
-  // See https://github.com/intuit/karate#karate-configjs for information on
-  // this file.
+  <testcase name="testGitHub" classname="com.telstra.codechallenge.FunctionalIT" time="4.045">
+    <system-out><![CDATA[05:23:28.888 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+05:23:28.897 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: karate
+05:23:28.898 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+05:23:28.899 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/github/oldusers/nofollowers/1
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
 
-  karate.configure("connectTimeout", 5000);
-  karate.configure("readTimeout", 5000);
+05:23:28.899 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://localhost:8080][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+05:23:28.900 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 2][route: {}->http://localhost:8080][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+05:23:28.900 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}->http://localhost:8080
+05:23:28.901 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to localhost/127.0.0.1:8080
+05:23:28.902 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 127.0.0.1:58379<->127.0.0.1:8080
+05:23:28.902 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-2: set socket timeout to 5000
+05:23:28.903 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request GET /github/oldusers/nofollowers/1 HTTP/1.1
+05:23:28.903 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+05:23:28.903 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+05:23:28.903 [main] DEBUG org.apache.http.headers - http-outgoing-2 >> GET /github/oldusers/nofollowers/1 HTTP/1.1
+05:23:28.903 [main] DEBUG org.apache.http.headers - http-outgoing-2 >> Host: localhost:8080
+05:23:28.903 [main] DEBUG org.apache.http.headers - http-outgoing-2 >> Connection: Keep-Alive
+05:23:28.903 [main] DEBUG org.apache.http.headers - http-outgoing-2 >> User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
+05:23:28.903 [main] DEBUG org.apache.http.headers - http-outgoing-2 >> Accept-Encoding: gzip,deflate
+05:23:28.903 [main] DEBUG org.apache.http.wire - http-outgoing-2 >> "GET /github/oldusers/nofollowers/1 HTTP/1.1[\r][\n]"
+05:23:28.903 [main] DEBUG org.apache.http.wire - http-outgoing-2 >> "Host: localhost:8080[\r][\n]"
+05:23:28.903 [main] DEBUG org.apache.http.wire - http-outgoing-2 >> "Connection: Keep-Alive[\r][\n]"
+05:23:28.904 [main] DEBUG org.apache.http.wire - http-outgoing-2 >> "User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)[\r][\n]"
+05:23:28.904 [main] DEBUG org.apache.http.wire - http-outgoing-2 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+05:23:28.904 [main] DEBUG org.apache.http.wire - http-outgoing-2 >> "[\r][\n]"
+05:23:32.911 [main] DEBUG org.apache.http.wire - http-outgoing-2 << "HTTP/1.1 200 [\r][\n]"
+05:23:32.911 [main] DEBUG org.apache.http.wire - http-outgoing-2 << "X-Content-Type-Options: nosniff[\r][\n]"
+05:23:32.911 [main] DEBUG org.apache.http.wire - http-outgoing-2 << "X-XSS-Protection: 1; mode=block[\r][\n]"
+05:23:32.912 [main] DEBUG org.apache.http.wire - http-outgoing-2 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+05:23:32.912 [main] DEBUG org.apache.http.wire - http-outgoing-2 << "Pragma: no-cache[\r][\n]"
+05:23:32.912 [main] DEBUG org.apache.http.wire - http-outgoing-2 << "Expires: 0[\r][\n]"
+05:23:32.912 [main] DEBUG org.apache.http.wire - http-outgoing-2 << "X-Frame-Options: DENY[\r][\n]"
+05:23:32.912 [main] DEBUG org.apache.http.wire - http-outgoing-2 << "Content-Type: application/json[\r][\n]"
+05:23:32.912 [main] DEBUG org.apache.http.wire - http-outgoing-2 << "Transfer-Encoding: chunked[\r][\n]"
+05:23:32.912 [main] DEBUG org.apache.http.wire - http-outgoing-2 << "Date: Thu, 13 Aug 2020 23:53:32 GMT[\r][\n]"
+05:23:32.912 [main] DEBUG org.apache.http.wire - http-outgoing-2 << "Keep-Alive: timeout=60[\r][\n]"
+05:23:32.912 [main] DEBUG org.apache.http.wire - http-outgoing-2 << "Connection: keep-alive[\r][\n]"
+05:23:32.912 [main] DEBUG org.apache.http.wire - http-outgoing-2 << "[\r][\n]"
+05:23:32.912 [main] DEBUG org.apache.http.wire - http-outgoing-2 << "51[\r][\n]"
+05:23:32.912 [main] DEBUG org.apache.http.wire - http-outgoing-2 << "[{"id":"13064166","login":"FreeSpeak","html_url":"https://github.com/FreeSpeak"}][\r][\n]"
+05:23:32.912 [main] DEBUG org.apache.http.wire - http-outgoing-2 << "0[\r][\n]"
+05:23:32.912 [main] DEBUG org.apache.http.wire - http-outgoing-2 << "[\r][\n]"
+05:23:32.913 [main] DEBUG org.apache.http.headers - http-outgoing-2 << HTTP/1.1 200 
+05:23:32.913 [main] DEBUG org.apache.http.headers - http-outgoing-2 << X-Content-Type-Options: nosniff
+05:23:32.913 [main] DEBUG org.apache.http.headers - http-outgoing-2 << X-XSS-Protection: 1; mode=block
+05:23:32.913 [main] DEBUG org.apache.http.headers - http-outgoing-2 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+05:23:32.913 [main] DEBUG org.apache.http.headers - http-outgoing-2 << Pragma: no-cache
+05:23:32.913 [main] DEBUG org.apache.http.headers - http-outgoing-2 << Expires: 0
+05:23:32.913 [main] DEBUG org.apache.http.headers - http-outgoing-2 << X-Frame-Options: DENY
+05:23:32.913 [main] DEBUG org.apache.http.headers - http-outgoing-2 << Content-Type: application/json
+05:23:32.913 [main] DEBUG org.apache.http.headers - http-outgoing-2 << Transfer-Encoding: chunked
+05:23:32.913 [main] DEBUG org.apache.http.headers - http-outgoing-2 << Date: Thu, 13 Aug 2020 23:53:32 GMT
+05:23:32.914 [main] DEBUG org.apache.http.headers - http-outgoing-2 << Keep-Alive: timeout=60
+05:23:32.914 [main] DEBUG org.apache.http.headers - http-outgoing-2 << Connection: keep-alive
+05:23:32.914 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive for 60000 MILLISECONDS
+05:23:32.915 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 2][route: {}->http://localhost:8080] can be kept alive for 60.0 seconds
+05:23:32.915 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-2: set socket timeout to 0
+05:23:32.915 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 2][route: {}->http://localhost:8080][total available: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+05:23:32.915 [main] DEBUG com.intuit.karate - response time in milliseconds: 4015.79
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Thu, 13 Aug 2020 23:53:32 GMT
+1 < Expires: 0
+1 < Keep-Alive: timeout=60
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+[{"id":"13064166","login":"FreeSpeak","html_url":"https://github.com/FreeSpeak"}]
 
-  var protocol = "http";
-  var host = "localhost";
+]]></system-out>
+  </testcase>
+  <testcase name="testGitHub" classname="com.telstra.codechallenge.FunctionalIT" time="1.322">
+    <system-out><![CDATA[05:23:32.931 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+05:23:32.938 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: karate
+05:23:32.938 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+05:23:32.939 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/github/repos/starred/1
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
 
-  var microservicePort = karate.properties["microservice.port"];
-  if (!microservicePort) {
-    microservicePort = "8080";
-  }
+05:23:32.939 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://localhost:8080][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+05:23:32.940 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 3][route: {}->http://localhost:8080][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+05:23:32.940 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}->http://localhost:8080
+05:23:32.940 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to localhost/127.0.0.1:8080
+05:23:32.941 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 127.0.0.1:58381<->127.0.0.1:8080
+05:23:32.942 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-3: set socket timeout to 5000
+05:23:32.942 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request GET /github/repos/starred/1 HTTP/1.1
+05:23:32.942 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+05:23:32.942 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+05:23:32.942 [main] DEBUG org.apache.http.headers - http-outgoing-3 >> GET /github/repos/starred/1 HTTP/1.1
+05:23:32.942 [main] DEBUG org.apache.http.headers - http-outgoing-3 >> Host: localhost:8080
+05:23:32.942 [main] DEBUG org.apache.http.headers - http-outgoing-3 >> Connection: Keep-Alive
+05:23:32.942 [main] DEBUG org.apache.http.headers - http-outgoing-3 >> User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
+05:23:32.942 [main] DEBUG org.apache.http.headers - http-outgoing-3 >> Accept-Encoding: gzip,deflate
+05:23:32.943 [main] DEBUG org.apache.http.wire - http-outgoing-3 >> "GET /github/repos/starred/1 HTTP/1.1[\r][\n]"
+05:23:32.943 [main] DEBUG org.apache.http.wire - http-outgoing-3 >> "Host: localhost:8080[\r][\n]"
+05:23:32.943 [main] DEBUG org.apache.http.wire - http-outgoing-3 >> "Connection: Keep-Alive[\r][\n]"
+05:23:32.943 [main] DEBUG org.apache.http.wire - http-outgoing-3 >> "User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)[\r][\n]"
+05:23:32.943 [main] DEBUG org.apache.http.wire - http-outgoing-3 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+05:23:32.943 [main] DEBUG org.apache.http.wire - http-outgoing-3 >> "[\r][\n]"
+05:23:34.196 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "HTTP/1.1 200 [\r][\n]"
+05:23:34.196 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "X-Content-Type-Options: nosniff[\r][\n]"
+05:23:34.197 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "X-XSS-Protection: 1; mode=block[\r][\n]"
+05:23:34.197 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+05:23:34.197 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "Pragma: no-cache[\r][\n]"
+05:23:34.197 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "Expires: 0[\r][\n]"
+05:23:34.197 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "X-Frame-Options: DENY[\r][\n]"
+05:23:34.197 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "Content-Type: application/json[\r][\n]"
+05:23:34.197 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "Transfer-Encoding: chunked[\r][\n]"
+05:23:34.197 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "Date: Thu, 13 Aug 2020 23:53:34 GMT[\r][\n]"
+05:23:34.197 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "Keep-Alive: timeout=60[\r][\n]"
+05:23:34.197 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "Connection: keep-alive[\r][\n]"
+05:23:34.197 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "[\r][\n]"
+05:23:34.197 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "d7[\r][\n]"
+05:23:34.197 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "[{"name":"eslint-plugin-replyguy","html_url":"https://github.com/jlengstorf/eslint-plugin-replyguy","watchers_count":"379","language":"JavaScript","description":"The ESLint plugin you definitely didn[0xe2][0x80][0x99]t ask for."}][\r][\n]"
+05:23:34.198 [main] DEBUG org.apache.http.headers - http-outgoing-3 << HTTP/1.1 200 
+05:23:34.198 [main] DEBUG org.apache.http.headers - http-outgoing-3 << X-Content-Type-Options: nosniff
+05:23:34.198 [main] DEBUG org.apache.http.headers - http-outgoing-3 << X-XSS-Protection: 1; mode=block
+05:23:34.198 [main] DEBUG org.apache.http.headers - http-outgoing-3 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+05:23:34.198 [main] DEBUG org.apache.http.headers - http-outgoing-3 << Pragma: no-cache
+05:23:34.198 [main] DEBUG org.apache.http.headers - http-outgoing-3 << Expires: 0
+05:23:34.198 [main] DEBUG org.apache.http.headers - http-outgoing-3 << X-Frame-Options: DENY
+05:23:34.198 [main] DEBUG org.apache.http.headers - http-outgoing-3 << Content-Type: application/json
+05:23:34.198 [main] DEBUG org.apache.http.headers - http-outgoing-3 << Transfer-Encoding: chunked
+05:23:34.198 [main] DEBUG org.apache.http.headers - http-outgoing-3 << Date: Thu, 13 Aug 2020 23:53:34 GMT
+05:23:34.198 [main] DEBUG org.apache.http.headers - http-outgoing-3 << Keep-Alive: timeout=60
+05:23:34.198 [main] DEBUG org.apache.http.headers - http-outgoing-3 << Connection: keep-alive
+05:23:34.199 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive for 60000 MILLISECONDS
+05:23:34.199 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "0[\r][\n]"
+05:23:34.199 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "[\r][\n]"
+05:23:34.199 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 3][route: {}->http://localhost:8080] can be kept alive for 60.0 seconds
+05:23:34.199 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-3: set socket timeout to 0
+05:23:34.200 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 3][route: {}->http://localhost:8080][total available: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+05:23:34.200 [main] DEBUG com.intuit.karate - response time in milliseconds: 1259.19
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Thu, 13 Aug 2020 23:53:34 GMT
+1 < Expires: 0
+1 < Keep-Alive: timeout=60
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+[{"name":"eslint-plugin-replyguy","html_url":"https://github.com/jlengstorf/eslint-plugin-replyguy","watchers_count":"379","language":"JavaScript","description":"The ESLint plugin you definitely didn’t ask for."}]
 
-  config = {};
-  config.microserviceUrl = protocol + "://" + host + ":" + microservicePort;
-  return config;
-}
-01:28:46.746 [main] ERROR com.intuit.karate - evaluation of 'karate-config.js' failed: javascript function call failed: ReferenceError: "karate" is not defined
 ---------------------------------------------------------
-feature: classpath:com/telstra/codechallenge/microservice.feature
-scenarios:  3 | passed:  0 | failed:  3 | time: 0.0000
+feature: classpath:com/telstra/codechallenge/github.feature
+scenarios:  2 | passed:  2 | failed:  0 | time: 5.2949
 ---------------------------------------------------------
 
 HTML report: (paste into browser to view) | Karate version: 0.9.5
-file:/c:/spring-boot-coding-exercise/functional-tests/target/surefire-reports/com.telstra.codechallenge.microservice.html
+file:/E:/sandeep/spring-boot-coding-exercise/functional-tests/target/surefire-reports/com.telstra.codechallenge.github.html
 ---------------------------------------------------------
 
 ]]></system-out>
   </testcase>
-  <testcase name="testQuotes" classname="com.telstra.codechallenge.FunctionalIT" time="0.058">
-    <failure type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: quotes.feature:6 - evaluation of 'karate-config.js' failed: javascript function call failed: ReferenceError: "karate" is not defined
-]]></failure>
-    <system-out><![CDATA[01:28:46.873 [main] ERROR com.intuit.karate - javascript function call failed: ReferenceError: "karate" is not defined
-01:28:46.874 [main] ERROR com.intuit.karate - failed function body: function() {
-  // See https://github.com/intuit/karate#karate-configjs for information on
-  // this file.
+  <testcase name="testQuotes" classname="com.telstra.codechallenge.FunctionalIT" time="0.729">
+    <system-out><![CDATA[05:23:34.286 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+05:23:34.298 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: karate
+05:23:34.298 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+05:23:34.298 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/quotes/random
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
 
-  karate.configure("connectTimeout", 5000);
-  karate.configure("readTimeout", 5000);
+05:23:34.299 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://localhost:8080][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+05:23:34.299 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 4][route: {}->http://localhost:8080][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+05:23:34.299 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}->http://localhost:8080
+05:23:34.299 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to localhost/127.0.0.1:8080
+05:23:34.300 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 127.0.0.1:58382<->127.0.0.1:8080
+05:23:34.301 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-4: set socket timeout to 5000
+05:23:34.301 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request GET /quotes/random HTTP/1.1
+05:23:34.301 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+05:23:34.301 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+05:23:34.301 [main] DEBUG org.apache.http.headers - http-outgoing-4 >> GET /quotes/random HTTP/1.1
+05:23:34.301 [main] DEBUG org.apache.http.headers - http-outgoing-4 >> Host: localhost:8080
+05:23:34.301 [main] DEBUG org.apache.http.headers - http-outgoing-4 >> Connection: Keep-Alive
+05:23:34.301 [main] DEBUG org.apache.http.headers - http-outgoing-4 >> User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
+05:23:34.301 [main] DEBUG org.apache.http.headers - http-outgoing-4 >> Accept-Encoding: gzip,deflate
+05:23:34.302 [main] DEBUG org.apache.http.wire - http-outgoing-4 >> "GET /quotes/random HTTP/1.1[\r][\n]"
+05:23:34.302 [main] DEBUG org.apache.http.wire - http-outgoing-4 >> "Host: localhost:8080[\r][\n]"
+05:23:34.302 [main] DEBUG org.apache.http.wire - http-outgoing-4 >> "Connection: Keep-Alive[\r][\n]"
+05:23:34.302 [main] DEBUG org.apache.http.wire - http-outgoing-4 >> "User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)[\r][\n]"
+05:23:34.302 [main] DEBUG org.apache.http.wire - http-outgoing-4 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+05:23:34.302 [main] DEBUG org.apache.http.wire - http-outgoing-4 >> "[\r][\n]"
+05:23:34.983 [main] DEBUG org.apache.http.wire - http-outgoing-4 << "HTTP/1.1 200 [\r][\n]"
+05:23:34.984 [main] DEBUG org.apache.http.wire - http-outgoing-4 << "X-Content-Type-Options: nosniff[\r][\n]"
+05:23:34.984 [main] DEBUG org.apache.http.wire - http-outgoing-4 << "X-XSS-Protection: 1; mode=block[\r][\n]"
+05:23:34.984 [main] DEBUG org.apache.http.wire - http-outgoing-4 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+05:23:34.984 [main] DEBUG org.apache.http.wire - http-outgoing-4 << "Pragma: no-cache[\r][\n]"
+05:23:34.984 [main] DEBUG org.apache.http.wire - http-outgoing-4 << "Expires: 0[\r][\n]"
+05:23:34.984 [main] DEBUG org.apache.http.wire - http-outgoing-4 << "X-Frame-Options: DENY[\r][\n]"
+05:23:34.984 [main] DEBUG org.apache.http.wire - http-outgoing-4 << "Content-Type: application/json[\r][\n]"
+05:23:34.984 [main] DEBUG org.apache.http.wire - http-outgoing-4 << "Transfer-Encoding: chunked[\r][\n]"
+05:23:34.985 [main] DEBUG org.apache.http.wire - http-outgoing-4 << "Date: Thu, 13 Aug 2020 23:53:34 GMT[\r][\n]"
+05:23:34.985 [main] DEBUG org.apache.http.wire - http-outgoing-4 << "Keep-Alive: timeout=60[\r][\n]"
+05:23:34.985 [main] DEBUG org.apache.http.wire - http-outgoing-4 << "Connection: keep-alive[\r][\n]"
+05:23:34.985 [main] DEBUG org.apache.http.wire - http-outgoing-4 << "[\r][\n]"
+05:23:34.985 [main] DEBUG org.apache.http.wire - http-outgoing-4 << "7b[\r][\n]"
+05:23:34.985 [main] DEBUG org.apache.http.wire - http-outgoing-4 << "{"type":"success","value":{"id":1,"quote":"Working with Spring Boot is like pair-programming with the Spring developers."}}[\r][\n]"
+05:23:34.985 [main] DEBUG org.apache.http.headers - http-outgoing-4 << HTTP/1.1 200 
+05:23:34.985 [main] DEBUG org.apache.http.headers - http-outgoing-4 << X-Content-Type-Options: nosniff
+05:23:34.985 [main] DEBUG org.apache.http.headers - http-outgoing-4 << X-XSS-Protection: 1; mode=block
+05:23:34.985 [main] DEBUG org.apache.http.headers - http-outgoing-4 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+05:23:34.985 [main] DEBUG org.apache.http.headers - http-outgoing-4 << Pragma: no-cache
+05:23:34.985 [main] DEBUG org.apache.http.headers - http-outgoing-4 << Expires: 0
+05:23:34.986 [main] DEBUG org.apache.http.headers - http-outgoing-4 << X-Frame-Options: DENY
+05:23:34.986 [main] DEBUG org.apache.http.headers - http-outgoing-4 << Content-Type: application/json
+05:23:34.986 [main] DEBUG org.apache.http.headers - http-outgoing-4 << Transfer-Encoding: chunked
+05:23:34.986 [main] DEBUG org.apache.http.headers - http-outgoing-4 << Date: Thu, 13 Aug 2020 23:53:34 GMT
+05:23:34.986 [main] DEBUG org.apache.http.headers - http-outgoing-4 << Keep-Alive: timeout=60
+05:23:34.986 [main] DEBUG org.apache.http.headers - http-outgoing-4 << Connection: keep-alive
+05:23:34.986 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive for 60000 MILLISECONDS
+05:23:34.987 [main] DEBUG org.apache.http.wire - http-outgoing-4 << "0[\r][\n]"
+05:23:34.987 [main] DEBUG org.apache.http.wire - http-outgoing-4 << "[\r][\n]"
+05:23:34.987 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 4][route: {}->http://localhost:8080] can be kept alive for 60.0 seconds
+05:23:34.987 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-4: set socket timeout to 0
+05:23:34.987 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 4][route: {}->http://localhost:8080][total available: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+05:23:34.987 [main] DEBUG com.intuit.karate - response time in milliseconds: 686.89
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Thu, 13 Aug 2020 23:53:34 GMT
+1 < Expires: 0
+1 < Keep-Alive: timeout=60
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"type":"success","value":{"id":1,"quote":"Working with Spring Boot is like pair-programming with the Spring developers."}}
 
-  var protocol = "http";
-  var host = "localhost";
+05:23:34.995 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $['Content-Type'][0]
+05:23:34.995 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+05:23:34.995 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+05:23:34.996 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+]]></system-out>
+  </testcase>
+  <testcase name="testQuotes" classname="com.telstra.codechallenge.FunctionalIT" time="0.398">
+    <system-out><![CDATA[05:23:35.008 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+05:23:35.014 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: karate
+05:23:35.014 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+05:23:35.014 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/quotes
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
 
-  var microservicePort = karate.properties["microservice.port"];
-  if (!microservicePort) {
-    microservicePort = "8080";
-  }
+05:23:35.015 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://localhost:8080][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+05:23:35.016 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 5][route: {}->http://localhost:8080][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+05:23:35.016 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}->http://localhost:8080
+05:23:35.016 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to localhost/127.0.0.1:8080
+05:23:35.018 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 127.0.0.1:58391<->127.0.0.1:8080
+05:23:35.018 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-5: set socket timeout to 5000
+05:23:35.018 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request GET /quotes HTTP/1.1
+05:23:35.019 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+05:23:35.019 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+05:23:35.019 [main] DEBUG org.apache.http.headers - http-outgoing-5 >> GET /quotes HTTP/1.1
+05:23:35.019 [main] DEBUG org.apache.http.headers - http-outgoing-5 >> Host: localhost:8080
+05:23:35.019 [main] DEBUG org.apache.http.headers - http-outgoing-5 >> Connection: Keep-Alive
+05:23:35.019 [main] DEBUG org.apache.http.headers - http-outgoing-5 >> User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
+05:23:35.019 [main] DEBUG org.apache.http.headers - http-outgoing-5 >> Accept-Encoding: gzip,deflate
+05:23:35.019 [main] DEBUG org.apache.http.wire - http-outgoing-5 >> "GET /quotes HTTP/1.1[\r][\n]"
+05:23:35.019 [main] DEBUG org.apache.http.wire - http-outgoing-5 >> "Host: localhost:8080[\r][\n]"
+05:23:35.019 [main] DEBUG org.apache.http.wire - http-outgoing-5 >> "Connection: Keep-Alive[\r][\n]"
+05:23:35.019 [main] DEBUG org.apache.http.wire - http-outgoing-5 >> "User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)[\r][\n]"
+05:23:35.019 [main] DEBUG org.apache.http.wire - http-outgoing-5 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+05:23:35.019 [main] DEBUG org.apache.http.wire - http-outgoing-5 >> "[\r][\n]"
+05:23:35.320 [main] DEBUG org.apache.http.wire - http-outgoing-5 << "HTTP/1.1 200 [\r][\n]"
+05:23:35.320 [main] DEBUG org.apache.http.wire - http-outgoing-5 << "X-Content-Type-Options: nosniff[\r][\n]"
+05:23:35.320 [main] DEBUG org.apache.http.wire - http-outgoing-5 << "X-XSS-Protection: 1; mode=block[\r][\n]"
+05:23:35.320 [main] DEBUG org.apache.http.wire - http-outgoing-5 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+05:23:35.320 [main] DEBUG org.apache.http.wire - http-outgoing-5 << "Pragma: no-cache[\r][\n]"
+05:23:35.320 [main] DEBUG org.apache.http.wire - http-outgoing-5 << "Expires: 0[\r][\n]"
+05:23:35.320 [main] DEBUG org.apache.http.wire - http-outgoing-5 << "X-Frame-Options: DENY[\r][\n]"
+05:23:35.320 [main] DEBUG org.apache.http.wire - http-outgoing-5 << "Content-Type: application/json[\r][\n]"
+05:23:35.322 [main] DEBUG org.apache.http.wire - http-outgoing-5 << "Transfer-Encoding: chunked[\r][\n]"
+05:23:35.322 [main] DEBUG org.apache.http.wire - http-outgoing-5 << "Date: Thu, 13 Aug 2020 23:53:35 GMT[\r][\n]"
+05:23:35.322 [main] DEBUG org.apache.http.wire - http-outgoing-5 << "Keep-Alive: timeout=60[\r][\n]"
+05:23:35.323 [main] DEBUG org.apache.http.wire - http-outgoing-5 << "Connection: keep-alive[\r][\n]"
+05:23:35.323 [main] DEBUG org.apache.http.wire - http-outgoing-5 << "[\r][\n]"
+05:23:35.323 [main] DEBUG org.apache.http.wire - http-outgoing-5 << "77e[\r][\n]"
+05:23:35.323 [main] DEBUG org.apache.http.wire - http-outgoing-5 << "[{"type":"success","value":{"id":1,"quote":"Working with Spring Boot is like pair-programming with the Spring developers."}},{"type":"success","value":{"id":2,"quote":"With Boot you deploy everywhere you can find a JVM basically."}},{"type":"success","value":{"id":3,"quote":"Spring has come quite a ways in addressing developer enjoyment and ease of use since the last time I built an application using it."}},{"type":"success","value":{"id":4,"quote":"Previous to Spring Boot, I remember XML hell, confusing set up, and many hours of frustration."}},{"type":"success","value":{"id":5,"quote":"Spring Boot solves this problem. It gets rid of XML and wires up common components for me, so I don't have to spend hours scratching my head just to figure out how it's all pieced together."}},{"type":"success","value":{"id":6,"quote":"It embraces convention over configuration, providing an experience on par with frameworks that excel at early stage development, such as Ruby on Rails."}},{"type":"success","value":{"id":7,"quote":"The real benefit of Boot, however, is that it's just Spring. That means any direction the code takes, regardless of complexity, I know it's a safe bet."}},{"type":"success","value":{"id":8,"quote":"I don't worry about my code scaling. Boot allows the developer to peel back the layers and customize when it's appropriate while keeping the conventions that just work."}},{"type":"success","value":{"id":9,"quote":"So easy it is to switch container in #springboot."}},{"type":"success","value":{"id":10,"quote":"Really loving Spring Boot, makes stand alone Spring apps easy."}},{"type":"success","value":{"id":11,"quote":"I have two hours today to build an app from scratch. @springboot to the rescue!"}},{"type":"success","value":{"id":12,"quote":"@springboot with @springframework is pure productivity! Who said in #java one has to write double the code than in other langs? #newFavLib"}}][\r][\n]"
+05:23:35.324 [main] DEBUG org.apache.http.headers - http-outgoing-5 << HTTP/1.1 200 
+05:23:35.324 [main] DEBUG org.apache.http.headers - http-outgoing-5 << X-Content-Type-Options: nosniff
+05:23:35.324 [main] DEBUG org.apache.http.headers - http-outgoing-5 << X-XSS-Protection: 1; mode=block
+05:23:35.324 [main] DEBUG org.apache.http.headers - http-outgoing-5 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+05:23:35.324 [main] DEBUG org.apache.http.headers - http-outgoing-5 << Pragma: no-cache
+05:23:35.325 [main] DEBUG org.apache.http.headers - http-outgoing-5 << Expires: 0
+05:23:35.325 [main] DEBUG org.apache.http.headers - http-outgoing-5 << X-Frame-Options: DENY
+05:23:35.325 [main] DEBUG org.apache.http.headers - http-outgoing-5 << Content-Type: application/json
+05:23:35.325 [main] DEBUG org.apache.http.headers - http-outgoing-5 << Transfer-Encoding: chunked
+05:23:35.325 [main] DEBUG org.apache.http.headers - http-outgoing-5 << Date: Thu, 13 Aug 2020 23:53:35 GMT
+05:23:35.325 [main] DEBUG org.apache.http.headers - http-outgoing-5 << Keep-Alive: timeout=60
+05:23:35.325 [main] DEBUG org.apache.http.headers - http-outgoing-5 << Connection: keep-alive
+05:23:35.326 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive for 60000 MILLISECONDS
+05:23:35.327 [main] DEBUG org.apache.http.wire - http-outgoing-5 << "0[\r][\n]"
+05:23:35.327 [main] DEBUG org.apache.http.wire - http-outgoing-5 << "[\r][\n]"
+05:23:35.327 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 5][route: {}->http://localhost:8080] can be kept alive for 60.0 seconds
+05:23:35.327 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-5: set socket timeout to 0
+05:23:35.327 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 5][route: {}->http://localhost:8080][total available: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+05:23:35.327 [main] DEBUG com.intuit.karate - response time in milliseconds: 310.85
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Thu, 13 Aug 2020 23:53:35 GMT
+1 < Expires: 0
+1 < Keep-Alive: timeout=60
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+[{"type":"success","value":{"id":1,"quote":"Working with Spring Boot is like pair-programming with the Spring developers."}},{"type":"success","value":{"id":2,"quote":"With Boot you deploy everywhere you can find a JVM basically."}},{"type":"success","value":{"id":3,"quote":"Spring has come quite a ways in addressing developer enjoyment and ease of use since the last time I built an application using it."}},{"type":"success","value":{"id":4,"quote":"Previous to Spring Boot, I remember XML hell, confusing set up, and many hours of frustration."}},{"type":"success","value":{"id":5,"quote":"Spring Boot solves this problem. It gets rid of XML and wires up common components for me, so I don't have to spend hours scratching my head just to figure out how it's all pieced together."}},{"type":"success","value":{"id":6,"quote":"It embraces convention over configuration, providing an experience on par with frameworks that excel at early stage development, such as Ruby on Rails."}},{"type":"success","value":{"id":7,"quote":"The real benefit of Boot, however, is that it's just Spring. That means any direction the code takes, regardless of complexity, I know it's a safe bet."}},{"type":"success","value":{"id":8,"quote":"I don't worry about my code scaling. Boot allows the developer to peel back the layers and customize when it's appropriate while keeping the conventions that just work."}},{"type":"success","value":{"id":9,"quote":"So easy it is to switch container in #springboot."}},{"type":"success","value":{"id":10,"quote":"Really loving Spring Boot, makes stand alone Spring apps easy."}},{"type":"success","value":{"id":11,"quote":"I have two hours today to build an app from scratch. @springboot to the rescue!"}},{"type":"success","value":{"id":12,"quote":"@springboot with @springframework is pure productivity! Who said in #java one has to write double the code than in other langs? #newFavLib"}}]
 
-  config = {};
-  config.microserviceUrl = protocol + "://" + host + ":" + microservicePort;
-  return config;
-}
-01:28:46.874 [main] ERROR com.intuit.karate - evaluation of 'karate-config.js' failed: javascript function call failed: ReferenceError: "karate" is not defined
+05:23:35.329 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $['Content-Type'][0]
+05:23:35.330 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+05:23:35.334 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+05:23:35.335 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+05:23:35.342 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+05:23:35.343 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
 ---------------------------------------------------------
 feature: classpath:com/telstra/codechallenge/quotes.feature
-scenarios:  1 | passed:  0 | failed:  1 | time: 0.0000
+scenarios:  2 | passed:  2 | failed:  0 | time: 1.0392
 ---------------------------------------------------------
 
 HTML report: (paste into browser to view) | Karate version: 0.9.5
-file:/c:/spring-boot-coding-exercise/functional-tests/target/surefire-reports/com.telstra.codechallenge.quotes.html
+file:/E:/sandeep/spring-boot-coding-exercise/functional-tests/target/surefire-reports/com.telstra.codechallenge.quotes.html
 ---------------------------------------------------------
 
 ]]></system-out>
   </testcase>
-  <testcase name="testQuotes" classname="com.telstra.codechallenge.FunctionalIT" time="0.056">
-    <failure type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: quotes.feature:24 - evaluation of 'karate-config.js' failed: javascript function call failed: ReferenceError: "karate" is not defined
-]]></failure>
-    <system-out><![CDATA[01:28:46.937 [main] ERROR com.intuit.karate - javascript function call failed: ReferenceError: "karate" is not defined
-01:28:46.938 [main] ERROR com.intuit.karate - failed function body: function() {
-  // See https://github.com/intuit/karate#karate-configjs for information on
-  // this file.
+  <testcase name="testHelloWorld" classname="com.telstra.codechallenge.FunctionalIT" time="0.1">
+    <system-out><![CDATA[05:23:35.449 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+05:23:35.461 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: karate
+05:23:35.462 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+05:23:35.462 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/hello
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
 
-  karate.configure("connectTimeout", 5000);
-  karate.configure("readTimeout", 5000);
+05:23:35.463 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://localhost:8080][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+05:23:35.463 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 6][route: {}->http://localhost:8080][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+05:23:35.463 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}->http://localhost:8080
+05:23:35.464 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to localhost/127.0.0.1:8080
+05:23:35.465 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 127.0.0.1:58392<->127.0.0.1:8080
+05:23:35.465 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-6: set socket timeout to 5000
+05:23:35.465 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request GET /hello HTTP/1.1
+05:23:35.465 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+05:23:35.465 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+05:23:35.466 [main] DEBUG org.apache.http.headers - http-outgoing-6 >> GET /hello HTTP/1.1
+05:23:35.466 [main] DEBUG org.apache.http.headers - http-outgoing-6 >> Host: localhost:8080
+05:23:35.466 [main] DEBUG org.apache.http.headers - http-outgoing-6 >> Connection: Keep-Alive
+05:23:35.466 [main] DEBUG org.apache.http.headers - http-outgoing-6 >> User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
+05:23:35.466 [main] DEBUG org.apache.http.headers - http-outgoing-6 >> Accept-Encoding: gzip,deflate
+05:23:35.466 [main] DEBUG org.apache.http.wire - http-outgoing-6 >> "GET /hello HTTP/1.1[\r][\n]"
+05:23:35.466 [main] DEBUG org.apache.http.wire - http-outgoing-6 >> "Host: localhost:8080[\r][\n]"
+05:23:35.467 [main] DEBUG org.apache.http.wire - http-outgoing-6 >> "Connection: Keep-Alive[\r][\n]"
+05:23:35.467 [main] DEBUG org.apache.http.wire - http-outgoing-6 >> "User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)[\r][\n]"
+05:23:35.467 [main] DEBUG org.apache.http.wire - http-outgoing-6 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+05:23:35.467 [main] DEBUG org.apache.http.wire - http-outgoing-6 >> "[\r][\n]"
+05:23:35.487 [main] DEBUG org.apache.http.wire - http-outgoing-6 << "HTTP/1.1 200 [\r][\n]"
+05:23:35.488 [main] DEBUG org.apache.http.wire - http-outgoing-6 << "X-Content-Type-Options: nosniff[\r][\n]"
+05:23:35.488 [main] DEBUG org.apache.http.wire - http-outgoing-6 << "X-XSS-Protection: 1; mode=block[\r][\n]"
+05:23:35.489 [main] DEBUG org.apache.http.wire - http-outgoing-6 << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+05:23:35.489 [main] DEBUG org.apache.http.wire - http-outgoing-6 << "Pragma: no-cache[\r][\n]"
+05:23:35.489 [main] DEBUG org.apache.http.wire - http-outgoing-6 << "Expires: 0[\r][\n]"
+05:23:35.489 [main] DEBUG org.apache.http.wire - http-outgoing-6 << "X-Frame-Options: DENY[\r][\n]"
+05:23:35.489 [main] DEBUG org.apache.http.wire - http-outgoing-6 << "Content-Type: application/json[\r][\n]"
+05:23:35.489 [main] DEBUG org.apache.http.wire - http-outgoing-6 << "Transfer-Encoding: chunked[\r][\n]"
+05:23:35.489 [main] DEBUG org.apache.http.wire - http-outgoing-6 << "Date: Thu, 13 Aug 2020 23:53:35 GMT[\r][\n]"
+05:23:35.489 [main] DEBUG org.apache.http.wire - http-outgoing-6 << "Keep-Alive: timeout=60[\r][\n]"
+05:23:35.489 [main] DEBUG org.apache.http.wire - http-outgoing-6 << "Connection: keep-alive[\r][\n]"
+05:23:35.489 [main] DEBUG org.apache.http.wire - http-outgoing-6 << "[\r][\n]"
+05:23:35.490 [main] DEBUG org.apache.http.wire - http-outgoing-6 << "22[\r][\n]"
+05:23:35.490 [main] DEBUG org.apache.http.wire - http-outgoing-6 << "{"id":1,"content":"Hello, World!"}[\r][\n]"
+05:23:35.490 [main] DEBUG org.apache.http.headers - http-outgoing-6 << HTTP/1.1 200 
+05:23:35.490 [main] DEBUG org.apache.http.headers - http-outgoing-6 << X-Content-Type-Options: nosniff
+05:23:35.490 [main] DEBUG org.apache.http.headers - http-outgoing-6 << X-XSS-Protection: 1; mode=block
+05:23:35.490 [main] DEBUG org.apache.http.headers - http-outgoing-6 << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+05:23:35.490 [main] DEBUG org.apache.http.headers - http-outgoing-6 << Pragma: no-cache
+05:23:35.490 [main] DEBUG org.apache.http.headers - http-outgoing-6 << Expires: 0
+05:23:35.490 [main] DEBUG org.apache.http.headers - http-outgoing-6 << X-Frame-Options: DENY
+05:23:35.490 [main] DEBUG org.apache.http.headers - http-outgoing-6 << Content-Type: application/json
+05:23:35.490 [main] DEBUG org.apache.http.headers - http-outgoing-6 << Transfer-Encoding: chunked
+05:23:35.490 [main] DEBUG org.apache.http.headers - http-outgoing-6 << Date: Thu, 13 Aug 2020 23:53:35 GMT
+05:23:35.490 [main] DEBUG org.apache.http.headers - http-outgoing-6 << Keep-Alive: timeout=60
+05:23:35.490 [main] DEBUG org.apache.http.headers - http-outgoing-6 << Connection: keep-alive
+05:23:35.490 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive for 60000 MILLISECONDS
+05:23:35.491 [main] DEBUG org.apache.http.wire - http-outgoing-6 << "0[\r][\n]"
+05:23:35.491 [main] DEBUG org.apache.http.wire - http-outgoing-6 << "[\r][\n]"
+05:23:35.491 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 6][route: {}->http://localhost:8080] can be kept alive for 60.0 seconds
+05:23:35.491 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-6: set socket timeout to 0
+05:23:35.491 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 6][route: {}->http://localhost:8080][total available: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+05:23:35.491 [main] DEBUG com.intuit.karate - response time in milliseconds: 27.93
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Thu, 13 Aug 2020 23:53:35 GMT
+1 < Expires: 0
+1 < Keep-Alive: timeout=60
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"id":1,"content":"Hello, World!"}
 
-  var protocol = "http";
-  var host = "localhost";
-
-  var microservicePort = karate.properties["microservice.port"];
-  if (!microservicePort) {
-    microservicePort = "8080";
-  }
-
-  config = {};
-  config.microserviceUrl = protocol + "://" + host + ":" + microservicePort;
-  return config;
-}
-01:28:46.939 [main] ERROR com.intuit.karate - evaluation of 'karate-config.js' failed: javascript function call failed: ReferenceError: "karate" is not defined
----------------------------------------------------------
-feature: classpath:com/telstra/codechallenge/quotes.feature
-scenarios:  3 | passed:  0 | failed:  3 | time: 0.0000
----------------------------------------------------------
-
-HTML report: (paste into browser to view) | Karate version: 0.9.5
-file:/c:/spring-boot-coding-exercise/functional-tests/target/surefire-reports/com.telstra.codechallenge.quotes.html
----------------------------------------------------------
-
-]]></system-out>
-  </testcase>
-  <testcase name="testHelloWorld" classname="com.telstra.codechallenge.FunctionalIT" time="0.048">
-    <failure type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: helloworld.feature:6 - evaluation of 'karate-config.js' failed: javascript function call failed: ReferenceError: "karate" is not defined
-]]></failure>
-    <system-out><![CDATA[01:28:47.023 [main] ERROR com.intuit.karate - javascript function call failed: ReferenceError: "karate" is not defined
-01:28:47.024 [main] ERROR com.intuit.karate - failed function body: function() {
-  // See https://github.com/intuit/karate#karate-configjs for information on
-  // this file.
-
-  karate.configure("connectTimeout", 5000);
-  karate.configure("readTimeout", 5000);
-
-  var protocol = "http";
-  var host = "localhost";
-
-  var microservicePort = karate.properties["microservice.port"];
-  if (!microservicePort) {
-    microservicePort = "8080";
-  }
-
-  config = {};
-  config.microserviceUrl = protocol + "://" + host + ":" + microservicePort;
-  return config;
-}
-01:28:47.025 [main] ERROR com.intuit.karate - evaluation of 'karate-config.js' failed: javascript function call failed: ReferenceError: "karate" is not defined
+05:23:35.493 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $['Content-Type'][0]
+05:23:35.493 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+05:23:35.493 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+05:23:35.493 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
 ---------------------------------------------------------
 feature: classpath:com/telstra/codechallenge/helloworld.feature
-scenarios:  1 | passed:  0 | failed:  1 | time: 0.0000
+scenarios:  1 | passed:  1 | failed:  0 | time: 0.0426
 ---------------------------------------------------------
 
 HTML report: (paste into browser to view) | Karate version: 0.9.5
-file:/c:/spring-boot-coding-exercise/functional-tests/target/surefire-reports/com.telstra.codechallenge.helloworld.html
+file:/E:/sandeep/spring-boot-coding-exercise/functional-tests/target/surefire-reports/com.telstra.codechallenge.helloworld.html
 ---------------------------------------------------------
 
 ]]></system-out>

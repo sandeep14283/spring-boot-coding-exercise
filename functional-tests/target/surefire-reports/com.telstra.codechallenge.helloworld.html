@@ -171,10 +171,54 @@
 <span class="scenario-keyword">Scenario: [1:6]</span><span class="scenario-name">Is the hello uri available and functioning</span>
 </div>
 <div class="step-row">
-<div class="step-cell failed">* scenario init failed</div>
-<div class="time-cell failed">0</div>
+<div class="step-cell passed">Given url microserviceUrl</div>
+<div class="time-cell passed">0.000041</div>
 </div>
-<div class="preformatted">helloworld.feature:6 - evaluation of 'karate-config.js' failed: javascript function call failed: ReferenceError: "karate" is not defined</div>
+<div class="step-row">
+<div class="step-cell passed">And path '/hello'</div>
+<div class="time-cell passed">0.009918</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">When method GET</div>
+<div class="time-cell passed">0.035181</div>
+</div>
+<div class="preformatted">05:45:06.406 request:
+1 &gt; GET http://localhost:8080/hello
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: localhost:8080
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
+
+05:45:06.436 response time in milliseconds: 28.16
+1 &lt; 200
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Fri, 14 Aug 2020 00:15:06 GMT
+1 &lt; Expires: 0
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Pragma: no-cache
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-XSS-Protection: 1; mode=block
+{"id":10,"content":"Hello, World!"}</div>
+<div class="step-row">
+<div class="step-cell passed">Then status 200</div>
+<div class="time-cell passed">0.000022</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">And match header Content-Type contains 'application/json'</div>
+<div class="time-cell passed">0.000898</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">And match response ==</div>
+<div class="time-cell passed">0.000975</div>
+</div>
+<div class="preformatted">{ id : '#number',
+  content : '#string'
+}
+And match response.content == "Hello, World!"</div>
 </div>
 </div>
 </body>

@@ -171,30 +171,111 @@
 <span class="scenario-keyword">Scenario: [1:6]</span><span class="scenario-name">Get a random quote</span>
 </div>
 <div class="step-row">
-<div class="step-cell failed">* scenario init failed</div>
-<div class="time-cell failed">0</div>
-</div>
-<div class="preformatted">quotes.feature:6 - evaluation of 'karate-config.js' failed: javascript function call failed: ReferenceError: "karate" is not defined</div>
-</div>
-<div class="scenario">
-<div class="scenario-heading">
-<span class="scenario-keyword">Scenario: [1:6]</span><span class="scenario-name">Get a random quote</span>
+<div class="step-cell passed">Given url microserviceUrl</div>
+<div class="time-cell passed">0.000052</div>
 </div>
 <div class="step-row">
-<div class="step-cell failed">* scenario init failed</div>
-<div class="time-cell failed">0</div>
+<div class="step-cell passed">And path '/quotes/random'</div>
+<div class="time-cell passed">0.011923</div>
 </div>
-<div class="preformatted">quotes.feature:6 - evaluation of 'karate-config.js' failed: javascript function call failed: ReferenceError: "karate" is not defined</div>
+<div class="step-row">
+<div class="step-cell passed">When method GET</div>
+<div class="time-cell passed">0.702999</div>
+</div>
+<div class="preformatted">05:45:05.153 request:
+1 &gt; GET http://localhost:8080/quotes/random
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: localhost:8080
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
+
+05:45:05.844 response time in milliseconds: 688.30
+1 &lt; 200
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Fri, 14 Aug 2020 00:15:04 GMT
+1 &lt; Expires: 0
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Pragma: no-cache
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-XSS-Protection: 1; mode=block
+{"type":"success","value":{"id":4,"quote":"Previous to Spring Boot, I remember XML hell, confusing set up, and many hours of frustration."}}</div>
+<div class="step-row">
+<div class="step-cell passed">Then status 200</div>
+<div class="time-cell passed">0.000032</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">And match header Content-Type contains 'application/json'</div>
+<div class="time-cell passed">0.013607</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">And match response ==</div>
+<div class="time-cell passed">0.001311</div>
+</div>
+<div class="preformatted">{ 
+  type : 'success',
+  value : {
+    id : '#number',
+    quote : '#string'
+  }
+}</div>
 </div>
 <div class="scenario">
 <div class="scenario-heading">
 <span class="scenario-keyword">Scenario: [2:24]</span><span class="scenario-name">Get all the quotes</span>
 </div>
 <div class="step-row">
-<div class="step-cell failed">* scenario init failed</div>
-<div class="time-cell failed">0</div>
+<div class="step-cell passed">Given url microserviceUrl</div>
+<div class="time-cell passed">0.000042</div>
 </div>
-<div class="preformatted">quotes.feature:24 - evaluation of 'karate-config.js' failed: javascript function call failed: ReferenceError: "karate" is not defined</div>
+<div class="step-row">
+<div class="step-cell passed">And path '/quotes'</div>
+<div class="time-cell passed">0.007321</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">When method GET</div>
+<div class="time-cell passed">0.300527</div>
+</div>
+<div class="preformatted">05:45:05.898 request:
+1 &gt; GET http://localhost:8080/quotes
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: localhost:8080
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_261)
+
+05:45:06.193 response time in milliseconds: 292.78
+1 &lt; 200
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Fri, 14 Aug 2020 00:15:06 GMT
+1 &lt; Expires: 0
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Pragma: no-cache
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-XSS-Protection: 1; mode=block
+[{"type":"success","value":{"id":1,"quote":"Working with Spring Boot is like pair-programming with the Spring developers."}},{"type":"success","value":{"id":2,"quote":"With Boot you deploy everywhere you can find a JVM basically."}},{"type":"success","value":{"id":3,"quote":"Spring has come quite a ways in addressing developer enjoyment and ease of use since the last time I built an application using it."}},{"type":"success","value":{"id":4,"quote":"Previous to Spring Boot, I remember XML hell, confusing set up, and many hours of frustration."}},{"type":"success","value":{"id":5,"quote":"Spring Boot solves this problem. It gets rid of XML and wires up common components for me, so I don't have to spend hours scratching my head just to figure out how it's all pieced together."}},{"type":"success","value":{"id":6,"quote":"It embraces convention over configuration, providing an experience on par with frameworks that excel at early stage development, such as Ruby on Rails."}},{"type":"success","value":{"id":7,"quote":"The real benefit of Boot, however, is that it's just Spring. That means any direction the code takes, regardless of complexity, I know it's a safe bet."}},{"type":"success","value":{"id":8,"quote":"I don't worry about my code scaling. Boot allows the developer to peel back the layers and customize when it's appropriate while keeping the conventions that just work."}},{"type":"success","value":{"id":9,"quote":"So easy it is to switch container in #springboot."}},{"type":"success","value":{"id":10,"quote":"Really loving Spring Boot, makes stand alone Spring apps easy."}},{"type":"success","value":{"id":11,"quote":"I have two hours today to build an app from scratch. @springboot to the rescue!"}},{"type":"success","value":{"id":12,"quote":"@springboot with @springframework is pure productivity! Who said in #java one has to write double the code than in other langs? #newFavLib"}}]</div>
+<div class="step-row">
+<div class="step-cell passed">Then status 200</div>
+<div class="time-cell passed">0.000022</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">And match header Content-Type contains 'application/json'</div>
+<div class="time-cell passed">0.00082</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* def quoteSchema = { type : 'success', value : { id : '#number', quote : '#string' } }</div>
+<div class="time-cell passed">0.000478</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">And match response == '#[12] quoteSchema'</div>
+<div class="time-cell passed">0.016171</div>
+</div>
 </div>
 </div>
 </body>

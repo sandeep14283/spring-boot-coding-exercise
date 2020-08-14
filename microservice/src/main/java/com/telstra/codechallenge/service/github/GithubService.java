@@ -19,10 +19,13 @@ import com.telstra.codechallenge.models.github.GithubRepo;
 import com.telstra.codechallenge.models.github.RepoItems;
 import com.telstra.codechallenge.models.github.UserFollowerItems;
 import com.telstra.codechallenge.quotes.Quote;
+import com.telstra.codechallenge.util.DateUtil;
 
 @Service
 public class GithubService {
 	
+	@Autowired
+	DateUtil dateUtil;
 	
 	@Value("${github.repo.url}")
 	 private String githubRepoUrl;
@@ -42,7 +45,8 @@ public class GithubService {
 			HttpHeaders headers = new HttpHeaders();
 			headers.set("Accept", "application/vnd.github.v3+json");
 			
-			 return restTemplate.getForObject(githubRepoUrl , GithubRepo.class).getItems();
+			 return restTemplate.getForObject(githubRepoUrl+">"+dateUtil.getDatePerPatternAWeekAgo() , 
+					 GithubRepo.class).getItems();
 		} catch (Exception ex) {
 			
 			GithubException exp = new GithubException("The following exception occured ::::   "+ex.getMessage());
