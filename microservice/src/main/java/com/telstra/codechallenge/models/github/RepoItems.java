@@ -7,7 +7,7 @@ import lombok.Data;
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Data
 public class RepoItems {
-	
+
 	String name;
 	String html_url;
 	String watchers_count;

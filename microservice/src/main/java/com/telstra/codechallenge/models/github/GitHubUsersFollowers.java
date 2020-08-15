@@ -9,12 +9,11 @@ import lombok.Data;
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Data
 public class GitHubUsersFollowers {
-	
+
 	private int total_count;
 
-    private boolean incomplete_results;
+	private boolean incomplete_results;
 
-    private List<UserFollowerItems> items;
-    
+	private List<UserFollowerItems> items;
+
 }
-

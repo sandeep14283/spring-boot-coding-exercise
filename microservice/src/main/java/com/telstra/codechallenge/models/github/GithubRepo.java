@@ -9,12 +9,11 @@ import lombok.Data;
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Data
 public class GithubRepo {
-	
-	
+
 	private int total_count;
 
-    private boolean incomplete_results;
+	private boolean incomplete_results;
 
-    private List<RepoItems> items;
+	private List<RepoItems> items;
 
 }

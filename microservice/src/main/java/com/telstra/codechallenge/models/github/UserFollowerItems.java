@@ -7,7 +7,7 @@ import lombok.Data;
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Data
 public class UserFollowerItems {
-	
+
 	String id;
 	String login;
 	String html_url;

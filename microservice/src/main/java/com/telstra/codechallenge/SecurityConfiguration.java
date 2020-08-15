@@ -7,10 +7,10 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 
 @Configuration
 @EnableWebSecurity
-public class SecurityConfiguration  extends WebSecurityConfigurerAdapter{
-  @Override
-  protected void configure(HttpSecurity http) throws Exception{
-    http.authorizeRequests().antMatchers("/github").permitAll();
-  }
+public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
+	@Override
+	protected void configure(HttpSecurity http) throws Exception {
+		http.authorizeRequests().antMatchers("/github").permitAll();
+	}
 
 }

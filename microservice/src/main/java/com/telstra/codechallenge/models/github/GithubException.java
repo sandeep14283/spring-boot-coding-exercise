@@ -6,14 +6,13 @@ import lombok.Data;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Data
-public class GithubException extends Exception{
-	
-	
-	public GithubException(){
-		
+public class GithubException extends Exception {
+
+	public GithubException() {
+
 	}
-	
-	public GithubException(String exceptionName){
+
+	public GithubException(String exceptionName) {
 		super(exceptionName);
 	}
 
