@@ -2,9 +2,12 @@ package com.telstra.codechallenge.service.impl;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpHeaders;
 import org.springframework.stereotype.Service;
 
+import com.telstra.codechallenge.MicroServiceMain;
 import com.telstra.codechallenge.models.GitHubUsersFollowers;
 import com.telstra.codechallenge.models.GithubException;
 import com.telstra.codechallenge.models.GithubRepo;
@@ -12,12 +15,11 @@ import com.telstra.codechallenge.models.RepoItems;
 import com.telstra.codechallenge.models.UserFollowerItems;
 import com.telstra.codechallenge.service.GithubAbstractService;
 
-import lombok.extern.slf4j.Slf4j;
-
-@Slf4j
 @Service("githubService")
 public class GithubServiceImpl extends GithubAbstractService {
 
+	static final Logger log = LoggerFactory.getLogger(MicroServiceMain.class);
+	
 	public List<RepoItems> getStarredRepos() throws Exception {
 
 		try {
