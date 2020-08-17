@@ -8,6 +8,7 @@ import javax.validation.constraints.Min;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -25,7 +26,7 @@ public class GithubController {
 	@Autowired
 	private GithubService githubService;
 
-	@RequestMapping(path = "/github/repos/starred/{size}", method = RequestMethod.GET)
+	@GetMapping(path = "/github/repos/starred/{size}")
 	public List<RepoItems> getStarredRepos(@Valid @PathVariable @Min(value = 1, message = "{record.length}") final int size) throws Exception {
 
 		List<RepoItems> itemList = new ArrayList<RepoItems>();
@@ -41,7 +42,7 @@ public class GithubController {
 		}
 	}
 
-	@RequestMapping(path = "github/oldusers/nofollowers/{size}", method = RequestMethod.GET)
+	@GetMapping(path = "/github/oldusers/nofollowers/{size}")
 	public List<UserFollowerItems> getOldestUsersWithZeroFollowers(@Valid @PathVariable @Min(value = 1, message = "{record.length}") final int size) throws Exception {
 
 		List<UserFollowerItems> itemList = new ArrayList<UserFollowerItems>();
