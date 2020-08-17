@@ -1,22 +1,21 @@
-package com.telstra.codechallenge.models;
+package com.telstra.codechallenge.exception;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.http.HttpStatus;
 
-public  class Error{
+public class Error {
 	private int errorCode;
 	private String error;
 	private String errorMessage;
 	private List<String> fieldErrors = new ArrayList<>();
-	
-	public Error(){
-		
-		
+
+	public Error() {
+
 	}
-	
-	public Error(HttpStatus status, String message, List<String> fieldErrors ) {
+
+	public Error(HttpStatus status, String message, List<String> fieldErrors) {
 		this.errorCode = status.value();
 		this.error = status.name();
 		this.errorMessage = message;

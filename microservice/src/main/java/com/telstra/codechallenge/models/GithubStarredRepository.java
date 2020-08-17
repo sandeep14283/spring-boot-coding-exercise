@@ -8,7 +8,7 @@ import lombok.Data;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Data
-public class GithubRepo {
+public class GithubStarredRepository {
 
 	private int total_count;
 

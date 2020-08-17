@@ -23,8 +23,6 @@ import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
 
 import com.telstra.codechallenge.MicroServiceMain;
-import com.telstra.codechallenge.models.Error;
-import com.telstra.codechallenge.models.GithubException;
 
 @ControllerAdvice
 public class GithubExceptionHandler {

@@ -9,8 +9,8 @@ import org.springframework.stereotype.Service;
 
 import com.telstra.codechallenge.MicroServiceMain;
 import com.telstra.codechallenge.models.GitHubUsersFollowers;
-import com.telstra.codechallenge.models.GithubException;
-import com.telstra.codechallenge.models.GithubRepo;
+import com.telstra.codechallenge.exception.GithubException;
+import com.telstra.codechallenge.models.GithubStarredRepository;
 import com.telstra.codechallenge.models.RepoItems;
 import com.telstra.codechallenge.models.UserFollowerItems;
 import com.telstra.codechallenge.service.GithubAbstractService;
@@ -18,7 +18,7 @@ import com.telstra.codechallenge.service.GithubAbstractService;
 @Service("githubService")
 public class GithubServiceImpl extends GithubAbstractService {
 
-	static final Logger log = LoggerFactory.getLogger(MicroServiceMain.class);
+	static final Logger log = LoggerFactory.getLogger(GithubServiceImpl.class);
 	
 	public List<RepoItems> getStarredRepos() throws Exception {
 
@@ -28,7 +28,7 @@ public class GithubServiceImpl extends GithubAbstractService {
 			headers.set("Accept", "application/vnd.github.v3+json");
 			log.info(" Trigerring api for starred repos");
 			return restTemplate
-					.getForObject(githubRepoUrl + ">" + dateUtil.getDatePerPatternAWeekAgo(), GithubRepo.class)
+					.getForObject(githubRepoUrl + ">" + dateUtil.getDatePerPatternAWeekAgo(), GithubStarredRepository.class)
 					.getItems();
 		} catch (Exception ex) {
 

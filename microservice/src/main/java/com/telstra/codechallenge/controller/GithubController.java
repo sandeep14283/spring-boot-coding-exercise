@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.telstra.codechallenge.models.GithubException;
+import com.telstra.codechallenge.exception.GithubException;
 import com.telstra.codechallenge.models.RepoItems;
 import com.telstra.codechallenge.models.UserFollowerItems;
 import com.telstra.codechallenge.service.GithubService;
