@@ -1,4 +1,4 @@
-package com.telstra.codechallenge;
+package com.telstra.codechallenge.security;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -8,6 +8,10 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 @Configuration
 @EnableWebSecurity
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
+	
+	// TODO
+	// Need to work on AuthProvider and Roles mapping.
+	
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http.authorizeRequests().antMatchers("/github").permitAll();
