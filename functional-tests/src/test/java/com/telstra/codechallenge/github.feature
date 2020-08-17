@@ -8,6 +8,7 @@ Feature: As a developer i want to test the github api for repos and older users 
     And path '/github/oldusers/nofollowers/1'
     When method GET
     Then status 200
+    And match header Content-Type contains 'application/json'
     
 
 

@@ -1,4 +1,4 @@
-package com.telstra.codechallenge.controller.github;
+package com.telstra.codechallenge.controller;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.telstra.codechallenge.models.github.GithubException;
-import com.telstra.codechallenge.models.github.RepoItems;
-import com.telstra.codechallenge.models.github.UserFollowerItems;
-import com.telstra.codechallenge.service.github.GithubService;
+import com.telstra.codechallenge.models.GithubException;
+import com.telstra.codechallenge.models.RepoItems;
+import com.telstra.codechallenge.models.UserFollowerItems;
+import com.telstra.codechallenge.service.GithubService;
 
 @RestController
 public class GithubController {

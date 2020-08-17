@@ -1,17 +1,20 @@
-package com.telstra.codechallenge.service.github.impl;
+package com.telstra.codechallenge.service.impl;
 
 import java.util.List;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.stereotype.Service;
 
-import com.telstra.codechallenge.models.github.GitHubUsersFollowers;
-import com.telstra.codechallenge.models.github.GithubException;
-import com.telstra.codechallenge.models.github.GithubRepo;
-import com.telstra.codechallenge.models.github.RepoItems;
-import com.telstra.codechallenge.models.github.UserFollowerItems;
-import com.telstra.codechallenge.service.github.GithubAbstractService;
+import com.telstra.codechallenge.models.GitHubUsersFollowers;
+import com.telstra.codechallenge.models.GithubException;
+import com.telstra.codechallenge.models.GithubRepo;
+import com.telstra.codechallenge.models.RepoItems;
+import com.telstra.codechallenge.models.UserFollowerItems;
+import com.telstra.codechallenge.service.GithubAbstractService;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 @Service("githubService")
 public class GithubServiceImpl extends GithubAbstractService {
 
@@ -21,13 +24,13 @@ public class GithubServiceImpl extends GithubAbstractService {
 
 			HttpHeaders headers = new HttpHeaders();
 			headers.set("Accept", "application/vnd.github.v3+json");
-
+			log.info(" Trigerring api for starred repos");
 			return restTemplate
 					.getForObject(githubRepoUrl + ">" + dateUtil.getDatePerPatternAWeekAgo(), GithubRepo.class)
 					.getItems();
 		} catch (Exception ex) {
 
-			GithubException exp = new GithubException("The following exception occured ::::   " + ex.getMessage());
+			GithubException exp = new GithubException(ex.getMessage());
 			throw exp;
 		}
 	}
@@ -38,11 +41,11 @@ public class GithubServiceImpl extends GithubAbstractService {
 
 			HttpHeaders headers = new HttpHeaders();
 			headers.set("Accept", "application/vnd.github.v3+json");
-
+			log.info(" Trigerring api for older users with no followers");
 			return restTemplate.getForObject(githubFollowersUrl, GitHubUsersFollowers.class).getItems();
 		} catch (Exception ex) {
 
-			GithubException exp = new GithubException("The following exception occured ::::   " + ex.getMessage());
+			GithubException exp = new GithubException(ex.getMessage());
 			throw exp;
 		}
 	}

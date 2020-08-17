@@ -1,4 +1,4 @@
-package com.telstra.codechallenge.models.github;
+package com.telstra.codechallenge.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
@@ -6,12 +6,10 @@ import lombok.Data;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Data
-public class RepoItems {
+public class UserFollowerItems {
 
-	String name;
+	String id;
+	String login;
 	String html_url;
-	String watchers_count;
-	String language;
-	String description;
 
 }

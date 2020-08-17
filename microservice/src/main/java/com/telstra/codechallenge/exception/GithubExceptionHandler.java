@@ -9,20 +9,23 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
 
-import com.telstra.codechallenge.models.github.GithubException;
+import com.telstra.codechallenge.models.GithubException;
+
+import lombok.extern.slf4j.Slf4j;
 
 @ControllerAdvice
+@Slf4j
 public class GithubExceptionHandler {
 
-	// Specify name of a specific view that will be used to display the error:
 	@ExceptionHandler({ GithubException.class })
 	public ResponseEntity<Object> controllerException(GithubException ex, WebRequest req) {
-
+		log.error("Exception ::: "+ex.getMessage());
 		return new ResponseEntity<>(ex.getMessage(), HttpStatus.NOT_FOUND);
 	}
 
 	@ExceptionHandler(Exception.class)
 	public ResponseEntity<Object> handle(Exception ex, HttpServletRequest request, HttpServletResponse response) {
+		log.error("Exception ::: "+ex.getMessage());
 		if (ex instanceof NullPointerException) {
 			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 		}

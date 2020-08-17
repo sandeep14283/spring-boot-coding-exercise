@@ -1,4 +1,4 @@
-package com.telstra.codechallenge.models.github;
+package com.telstra.codechallenge.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 

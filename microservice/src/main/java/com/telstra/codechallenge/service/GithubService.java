@@ -1,9 +1,9 @@
-package com.telstra.codechallenge.service.github;
+package com.telstra.codechallenge.service;
 
 import java.util.List;
 
-import com.telstra.codechallenge.models.github.RepoItems;
-import com.telstra.codechallenge.models.github.UserFollowerItems;
+import com.telstra.codechallenge.models.RepoItems;
+import com.telstra.codechallenge.models.UserFollowerItems;
 
 public interface GithubService {
 
